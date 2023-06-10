@@ -12,7 +12,7 @@
     "stefan.qi": "nianshiguang@126.com"
   },
   "source": {
-    "git": "https://github.com/honourcoder/UBiXMediationSDK.git",
+    "git": "git@github.com:honourcoder/UBiXMediationSDK.git",
     "tag": "2.1.2.11"
   },
   "platforms": {
