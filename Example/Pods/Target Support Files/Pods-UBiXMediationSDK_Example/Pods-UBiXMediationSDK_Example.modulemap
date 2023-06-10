@@ -1,0 +1,6 @@
+framework module Pods_UBiXMediationSDK_Example {
+  umbrella header "Pods-UBiXMediationSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

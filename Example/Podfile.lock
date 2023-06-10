@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - UBiXMediationSDK (2.1.2.11)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - UBiXMediationSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  UBiXMediationSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  UBiXMediationSDK: ffead2705888e602df40d52f6eada67c94372db3
+
+PODFILE CHECKSUM: 41e1bfba7279239010b762b180ce1f30c2c24519
+
+COCOAPODS: 1.11.3
