@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.1.2.11'
+  s.version          = '2.1.2.12'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -31,8 +31,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
 #  s.source_files = 'UBiXMediationSDK/Classes/**/*'
-  s.vendored_frameworks = ['UBiXMediationSDK/Classes/UbiXMediation.framework']
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.vendored_frameworks = ['UBiXMediationSDK/Classes/UbiXMediation.framework','UBiXMediationSDK/Classes/UbiXDaq.framework','UBiXMediationSDK/Classes/UbiXAdSDK.framework']
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   
   # s.resource_bundles = {
   #   'UBiXMediationSDK' => ['UBiXMediationSDK/Assets/*.png']

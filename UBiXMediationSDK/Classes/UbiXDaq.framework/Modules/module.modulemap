@@ -1,0 +1,6 @@
+framework module UbiXDaq {
+  umbrella header "UbiXDaq.h"
+
+  export *
+  module * { export * }
+}
