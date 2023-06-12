@@ -41,9 +41,9 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Ads-CN'
-  s.dependency 'GDTMobSDK'
-  s.dependency 'KSAdSDK', '~> 3.3.36'
-  s.dependency 'BaiduMobAdSDK'
+#  s.dependency 'Ads-CN'
+#  s.dependency 'GDTMobSDK'
+#  s.dependency 'KSAdSDK', '~> 3.3.36'
+#  s.dependency 'BaiduMobAdSDK'
   s.dependency 'JADYun'
 end

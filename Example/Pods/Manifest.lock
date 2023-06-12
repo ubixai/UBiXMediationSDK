@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - UBiXMediationSDK (2.1.2.13)
+  - JADYun (2.2.8)
+  - UBiXMediationSDK (2.1.2.13):
+    - JADYun
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - JADYun
 
 EXTERNAL SOURCES:
   UBiXMediationSDK:
@@ -20,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  UBiXMediationSDK: bcfbf7057e2381b623a50d40408aac0eafd7db94
+  JADYun: 0a86fce79b18e299e65c00e6f637fd8494f4e672
+  UBiXMediationSDK: eef1b03865877ca29f3a306e62b0a4028a6a35e6
 
 PODFILE CHECKSUM: 41e1bfba7279239010b762b180ce1f30c2c24519
 
