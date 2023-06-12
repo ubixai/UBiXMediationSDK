@@ -1,6 +1,0 @@
-framework module UbiXAdSDK {
-  umbrella header "UbiXAdSDK.h"
-
-  export *
-  module * { export * }
-}
