@@ -208,6 +208,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				6E072A1F6966936FBC1EDD96 /* [CP] Copy Pods Resources */,
+				962DA327A12CEB79E24403C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +356,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962DA327A12CEB79E24403C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework/KSAdSDK",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSAdSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEEF21E67370985040B2DA54 /* [CP] Check Pods Manifest.lock */ = {

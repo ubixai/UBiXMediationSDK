@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/UBiXMediationSDK
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../UBiXMediationSDK/SDK" "${PODS_ROOT}/BaiduMobAdSDK" "${PODS_ROOT}/JADYun"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../UBiXMediationSDK/SDK" "${PODS_ROOT}/BaiduMobAdSDK" "${PODS_ROOT}/JADYun" "${PODS_ROOT}/KSAdSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "Accelerate" -framework "AdSupport" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreServices" -framework "CoreTelephony" -framework "EventKit" -framework "ImageIO" -framework "MapKit" -framework "MessageUI" -framework "Photos" -framework "QuartzCore" -framework "SafariServices" -framework "StoreKit" -framework "SystemConfiguration" -framework "WebKit"
+OTHER_LDFLAGS = $(inherited) -framework "AVFoundation" -framework "AVKit" -framework "Accelerate" -framework "AdSupport" -framework "AssetsLibrary" -framework "AudioToolBox" -framework "CoreData" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreServices" -framework "CoreTelephony" -framework "EventKit" -framework "Foundation" -framework "ImageIO" -framework "JavaScriptCore" -framework "KSAdSDK" -framework "MapKit" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "Photos" -framework "QuartzCore" -framework "QuickLook" -framework "SafariServices" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

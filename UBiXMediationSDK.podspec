@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
 #  s.dependency 'Ads-CN'
 #  s.dependency 'GDTMobSDK'
-#  s.dependency 'KSAdSDK', '~> 3.3.36'
+  s.dependency 'KSAdSDK', '~> 3.3.36'
   s.dependency 'BaiduMobAdSDK'
   s.dependency 'JADYun'
 end
