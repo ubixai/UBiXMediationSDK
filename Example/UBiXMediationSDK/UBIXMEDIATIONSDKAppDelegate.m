@@ -7,12 +7,144 @@
 //
 
 #import "UBIXMEDIATIONSDKAppDelegate.h"
+#import <UbiXMediation/UbiXMediationSDK.h>
+#import <UbiXMediation/UbiXMediationSplash.h>
+#import <UbiXDaq/UbiXDaq.h>
+#import "UBIXMEDIATIONSDKViewController.h"
+
+@interface AdWindow : UIWindow <UbiXMediationSplashDelegate>
+@property (nonatomic, strong)UbiXMediationSplash *splash;
+@property (nonatomic, assign)BOOL isClick;
+@end
+@implementation AdWindow
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.isClick = NO;
+        UbiXMConcealConfig *config = [[UbiXMConcealConfig alloc] init];
+        config.isCanReadIDFA = NO;
+        config.isOpenLog = YES;
+        [UbiXMediationSDK initializeWithAppId:@"138820189206" config:config];
+//        [self requestSplash];
+    }
+    return self;
+}
+
+- (void)requestSplash {
+    self.splash = [[UbiXMediationSplash alloc] initWithSlotId:@"14072156"];
+    self.splash.delegate = self;
+    self.splash.rootViewController = self.rootViewController; // 此时还没有rootVC
+    UILabel *bottom = [[UILabel alloc] init];
+    bottom.backgroundColor = [UIColor orangeColor];
+    bottom.text = @"开发者自定义view";
+    bottom.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 100);
+    bottom.contentMode = UIViewContentModeCenter;
+    bottom.textAlignment = NSTextAlignmentCenter;
+    if (arc4random()%2==1) {
+        self.splash.bottomView = bottom;
+    }
+    [self.splash loadAd];
+}
+
+
+- (void)dealloc {
+    self.splash = nil;
+//    DEMOLOG(@"____adwindow dealloc____");
+}
+// 开屏广告加载成功
+- (void)mediationSplashDidLoad:(UbiXMediationSplash *)splash{
+//    DEMOLOG(@"开屏广告加载成功 %s", __func__);
+//    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    if ([self.splash isReady]) {
+        [self.splash showAd:self];
+    }
+}
+
+// 开屏广告展示成功
+- (void)mediationSplashDidShow:(UbiXMediationSplash *)splash{
+    NSLog(@"开屏广告展示成功 %s", __func__);
+    self.backgroundColor = [UIColor clearColor];
+    UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    if ([app respondsToSelector:@selector(adShow)]) {
+        [app performSelector:@selector(adShow)];
+    }
+}
+
+// 展示失败回调
+- (void)mediationSplashDidFailToShow:(UbiXMediationSplash *)splash error:(NSError *)error {
+    NSLog(@"开屏广告展示失败 %s", __func__);
+    UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    if ([app respondsToSelector:@selector(adShowFail)]) {
+        [app performSelector:@selector(adShowFail)];
+    }
+}
+
+// 开屏广告加载失败回调
+- (void)mediationSplashDidFailToLoad:(UbiXMediationSplash *)splash error:(NSError *)error{
+    NSLog(@"开屏广告加载失败回调 %s : %@", __func__, error);
+    UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    if ([app respondsToSelector:@selector(adFail)]) {
+        [app performSelector:@selector(adFail)];
+    }
+    if ([app respondsToSelector:@selector(adClose)]) {
+        [app performSelector:@selector(adClose) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO];
+    }
+}
+
+// 开屏点击广告回调
+- (void)mediationSplashDidClick:(UbiXMediationSplash *)splash{
+    NSLog(@"开屏广告点击回调 %s", __func__);
+    self.isClick = YES;
+    UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    if ([app respondsToSelector:@selector(adClick)]) {
+        [app performSelector:@selector(adClick)];
+    }
+}
+
+// 开屏关闭广告回调
+- (void)mediationSplashDidClosed:(UbiXMediationSplash *)splash skip:(BOOL)isSkip{
+    NSLog(@"开屏广告关闭回调 %s", __func__);
+    UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    if ([app respondsToSelector:@selector(adClose)]) {
+        [app performSelector:@selector(adClose) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO];
+    }
+    
+}
+- (void)mediationSplashDidFinishConversion:(UbiXMediationSplash *)splash{
+    NSLog(@"开屏广告转化完成 %s", __func__);
+    UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
+    if ([app respondsToSelector:@selector(adShowClose)]) {
+        [app performSelector:@selector(adShowClose)];
+    }
+}
+@end
+
+@interface UBIXMEDIATIONSDKAppDelegate ()
+
+@property (nonatomic, strong) AdWindow *adWindow;
+@property (nonatomic, strong) dispatch_source_t timer;
+
+@end
 
 @implementation UBIXMEDIATIONSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    UBIXMEDIATIONSDKViewController *vc = [[UBIXMEDIATIONSDKViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    _adWindow = [[AdWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _adWindow.backgroundColor = [UIColor whiteColor];
+    _adWindow.windowLevel = UIWindowLevelAlert + 1000000;
+    _adWindow.rootViewController = [[UIViewController alloc] init];
+    [_adWindow makeKeyAndVisible];
+    [_adWindow requestSplash];
+
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.backgroundColor = [UIColor whiteColor];
+    _window.rootViewController = navi;
+    
     return YES;
 }
 
