@@ -1,6 +1,6 @@
 {
   "name": "UBiXMediationSDK",
-  "version": "2.1.2.13",
+  "version": "2.1.2.14",
   "summary": "UBiX聚合广告变现SDK",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/honourcoder/UBiXMediationSDK",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/honourcoder/UBiXMediationSDK.git",
-    "tag": "2.1.2.13"
+    "tag": "2.1.2.14"
   },
   "platforms": {
     "ios": "9.0"
@@ -27,6 +27,9 @@
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "dependencies": {
+    "BaiduMobAdSDK": [
+
+    ],
     "JADYun": [
 
     ]

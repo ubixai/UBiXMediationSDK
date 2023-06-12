@@ -207,6 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				6E072A1F6966936FBC1EDD96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,6 +337,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBiXMediationSDK_Tests/Pods-UBiXMediationSDK_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E072A1F6966936FBC1EDD96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-resources.sh",
+				"${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EEEF21E67370985040B2DA54 /* [CP] Check Pods Manifest.lock */ = {

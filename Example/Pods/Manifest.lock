@@ -1,11 +1,13 @@
 PODS:
+  - BaiduMobAdSDK (5.301)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - JADYun (2.2.8)
-  - UBiXMediationSDK (2.1.2.13):
+  - UBiXMediationSDK (2.1.2.14):
+    - BaiduMobAdSDK
     - JADYun
 
 DEPENDENCIES:
@@ -14,6 +16,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - BaiduMobAdSDK
     - FBSnapshotTestCase
     - JADYun
 
@@ -22,9 +25,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  BaiduMobAdSDK: bb64abc1b5104134d4a0fcd2ff223e688c5aa372
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   JADYun: 0a86fce79b18e299e65c00e6f637fd8494f4e672
-  UBiXMediationSDK: eef1b03865877ca29f3a306e62b0a4028a6a35e6
+  UBiXMediationSDK: ca303f7672f0768be4ecc01dabbbe5b090e36aef
 
 PODFILE CHECKSUM: 41e1bfba7279239010b762b180ce1f30c2c24519
 
