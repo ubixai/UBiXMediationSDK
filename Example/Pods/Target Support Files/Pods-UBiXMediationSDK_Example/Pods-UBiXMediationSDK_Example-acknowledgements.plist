@@ -45,6 +45,16 @@ SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>Copyright 2017 Tencent Inc. All Rights Reserved.</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>GDTMobSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>Copyright (c) 2023 stefan.qi &lt;nianshiguang@126.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

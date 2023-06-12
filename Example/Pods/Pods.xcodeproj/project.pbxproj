@@ -17,6 +17,15 @@
 			);
 			name = KSAdSDK;
 		};
+		6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1B6AEFC3189ED1E6EBD94C30A4CFB889 /* Build configuration list for PBXAggregateTarget "GDTMobSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GDTMobSDK;
+		};
 		940F0EDB82A2640A378CA0D36C9E53F7 /* JADYun */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 90C420B06D38BC748A671578D39F1C69 /* Build configuration list for PBXAggregateTarget "JADYun" */;
@@ -37,199 +46,255 @@
 		};
 		F0DE4F2DDE5AE4CFFE4EAABEC652EC2F /* UBiXMediationSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 973BB358C8966506A3DD6CF0E453D2EA /* Build configuration list for PBXAggregateTarget "UBiXMediationSDK" */;
+			buildConfigurationList = 0309545F02A2C5FAD73419BB6E4D0912 /* Build configuration list for PBXAggregateTarget "UBiXMediationSDK" */;
 			buildPhases = (
 			);
 			dependencies = (
-				3601E4AE3A5B64AF7BAC8953BF713D7E /* PBXTargetDependency */,
-				8A0D8B6F5C38EA49E17EBFEF13EEE31D /* PBXTargetDependency */,
-				72FB9BF1476130D68E98B4D922BE3329 /* PBXTargetDependency */,
+				D309ED31A0B7BF573F2CA9805EC54F20 /* PBXTargetDependency */,
+				4C879DA376546B05BAE447AA9CA18D5C /* PBXTargetDependency */,
+				39F85A4B22E53F1A3C4DC1CD343B154B /* PBXTargetDependency */,
+				16E2E757F74D597CF0643B9419B2B7D6 /* PBXTargetDependency */,
 			);
 			name = UBiXMediationSDK;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1F20D802FB528FF9DF21475BE20C0399 /* Pods-UBiXMediationSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A800A7FDD4907AC95765FC122FC3C011 /* Pods-UBiXMediationSDK_Example-dummy.m */; };
-		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D994C1552F05BD962804499B4C7F5702 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0486103AC3499E5F72AB6CAC64D6C8 /* SwiftSupport.swift */; };
-		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 98BB64D7D4C1165947F6AAD2A906562D /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C73C881C250662252B0DD3B9C3B6C718 /* UIImage+Snapshot.m */; };
+		1ACCAEAFD67E82642C9868AD3BEE8DF0 /* Pods-UBiXMediationSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A800A7FDD4907AC95765FC122FC3C011 /* Pods-UBiXMediationSDK_Example-dummy.m */; };
+		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32600E08259AC84BFF52164EBB535F33 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFE150ADD32371EDF39AF71872FD7FE /* SwiftSupport.swift */; };
+		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FF51BCF7A17D78083AC36AB94B9564 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E744B4F03EE0E4A8BC0EF1335BEB940 /* UIImage+Snapshot.m */; };
 		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2879BEB3D44C10344924562D504794 /* FBSnapshotTestCasePlatform.m */; };
-		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = F803B7173A22C66122B80E06467CF08F /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA52B2576B19966A116FF6C0275D495 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D0DF2B1702B5604A7C777091A7B91 /* FBSnapshotTestCase-dummy.m */; };
-		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C0757E1A27521B199E8457F08E0421 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A14BDE852FC57B6F253D0EE71A3161 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9BB870C548DB841196B46A8A67E3EF /* UIApplication+StrictKeyWindow.m */; };
-		763808C373B126E41C0FDD21B66CEF36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF02A8C0314D6AF08D6E696DCA2E3B6 /* FBSnapshotTestCase.m */; };
+		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F154174C67F4FE0A4EE621BDD76BD06 /* FBSnapshotTestCasePlatform.m */; };
+		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2AFC2919239B57E1A787E95145858A /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C38692FE5415B4AFADA8F4BA50AB53 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 223643AC50D35B1B36B067DFFC10D43C /* FBSnapshotTestCase-dummy.m */; };
+		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = EEFDCCECC9A6AC2F212CE4AD97B5DF8A /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D3C47165B0F3F3E2F934F7A7E24D2F8 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A365F942E3B31D119D5F178D2615736 /* UIApplication+StrictKeyWindow.m */; };
+		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C947833DC085D9B22C5881BA6758EE8 /* FBSnapshotTestCase.m */; };
+		86B1CD40C49CB069784F319FA33092A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
-		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E207BF012559D1FD77610AF336E55D /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = E1974BCBA43B8DBDB3422FBD7E44730D /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		941ADDFF96FACF405B453D4B981A1396 /* Pods-UBiXMediationSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D57D84970E61D460016AEA4AD559EFD9 /* Pods-UBiXMediationSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		A3F63DF0D2C2B6D8E110378EBD29DE61 /* Pods-UBiXMediationSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C0DA1E400F0BBE873AED460BD48FC7 /* Pods-UBiXMediationSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAA9C6A84241A878501A375D64ACA517 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = E175B9629252210925A8384CCB84463F /* UIImage+Compare.m */; };
-		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0C62E8DF70672249B5CFD78E45C31 /* FBSnapshotTestController.m */; };
+		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1407A68FCB5D27D57FA099D79F183E99 /* UIImage+Compare.m */; };
+		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC0B8EBED752E71D319ADBFC2582998 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
-		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DD3B60F32A3F993207D351CC5FCE85 /* UIImage+Diff.m */; };
+		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 303029DC617BA025026F346046F16A42 /* UIImage+Diff.m */; };
 		F86DD1CCC4CBA2B5B27F54D9C1594B6E /* Pods-UBiXMediationSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D77A2E1F0CA103F92BE4E1F46D769299 /* Pods-UBiXMediationSDK_Tests-dummy.m */; };
-		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B924F1FA3D4A6AB6B42A20AE4B9A2C /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FED5C21EE96CEE6A52A49C75A71B1D20 /* Pods-UBiXMediationSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C0DA1E400F0BBE873AED460BD48FC7 /* Pods-UBiXMediationSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = ED30632FF4B0FD0A50B74DEA5B4CD5FC /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		038F58043A6A61D704E788755AF945E7 /* PBXContainerItemProxy */ = {
+		184F81803344A0F708DF4AD36CC0B46F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A33942C0A3A0CED25749EF27F05ED387;
 			remoteInfo = BaiduMobAdSDK;
 		};
-		0A12C5886B25FC02CBE27202636A973E /* PBXContainerItemProxy */ = {
+		19E6B15E94CC013D215745B4B996345B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F0DE4F2DDE5AE4CFFE4EAABEC652EC2F;
-			remoteInfo = UBiXMediationSDK;
+			remoteGlobalIDString = A33942C0A3A0CED25749EF27F05ED387;
+			remoteInfo = BaiduMobAdSDK;
 		};
-		0A91A7D81541EE20B6A405031538C562 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 940F0EDB82A2640A378CA0D36C9E53F7;
-			remoteInfo = JADYun;
-		};
-		37E038D4D304ED52B56905A0CE84A5C5 /* PBXContainerItemProxy */ = {
+		1D8B606A5A7ACA09B24235FB98CCB541 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		81E0317DF20E2FF9A3A2A663F3CF7501 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
-			remoteInfo = KSAdSDK;
-		};
-		873CBD6C53D7ACDA1A807A24FE293F2B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 940F0EDB82A2640A378CA0D36C9E53F7;
-			remoteInfo = JADYun;
-		};
-		A6E5501FFBCD6530BE88860268E7D639 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
-			remoteInfo = KSAdSDK;
-		};
-		BE7ECB9FCEE0F4B3032C320ECE728AD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A33942C0A3A0CED25749EF27F05ED387;
-			remoteInfo = BaiduMobAdSDK;
-		};
-		D35339EBF1E6456279C71DEA8E29C031 /* PBXContainerItemProxy */ = {
+		22D06980964B4365EDD35D3712C3DAAB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4856E78EDA7077AD642FEBF0FDAC3DD3;
 			remoteInfo = "Pods-UBiXMediationSDK_Example";
 		};
+		35E4F5C20D129E80DEBFD2554DD8B176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
+			remoteInfo = GDTMobSDK;
+		};
+		46500112EBC511EFB8DA13B1E29B235D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
+			remoteInfo = KSAdSDK;
+		};
+		496C08D1A0A7C66830646047D787BAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 940F0EDB82A2640A378CA0D36C9E53F7;
+			remoteInfo = JADYun;
+		};
+		85BDC5FB01B03717FA7B1CB035FBA730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
+			remoteInfo = GDTMobSDK;
+		};
+		877998AFDA78C034BD091AE9B54FF521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0DE4F2DDE5AE4CFFE4EAABEC652EC2F;
+			remoteInfo = UBiXMediationSDK;
+		};
+		A915E549C1FDF301EDC8064D0D7DF6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
+			remoteInfo = KSAdSDK;
+		};
+		E999737CE2F36D3447E11EE4259261CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 940F0EDB82A2640A378CA0D36C9E53F7;
+			remoteInfo = JADYun;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DD3B60F32A3F993207D351CC5FCE85 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		088294BA324CB90BFEA6309B7D0E2A9D /* GDTSplashAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = lib/GDTSplashAd.h; sourceTree = "<group>"; };
+		08EADA8BA62F220006A9D27240F8FFA9 /* GDTUnifiedNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdView.h; path = lib/GDTUnifiedNativeAdView.h; sourceTree = "<group>"; };
 		08F54945BCFFA5635204281F773B37BD /* Pods-UBiXMediationSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UBiXMediationSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0F04AB2968A4161591B28DE411A54EAA /* Pods-UBiXMediationSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UBiXMediationSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		168938DFBEE6EBAE5C41D653834AA46A /* JADYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JADYun.release.xcconfig; sourceTree = "<group>"; };
+		1407A68FCB5D27D57FA099D79F183E99 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		147579FD3C92CDA3DBDFD64D613DF48B /* GDTSDKDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKDefines.h; path = lib/GDTSDKDefines.h; sourceTree = "<group>"; };
+		1703D2D501A243BDC2BD02B68712A3B4 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		1829C89C8ECA51E4555DAEA6F24604E9 /* Pods-UBiXMediationSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UBiXMediationSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		182B77AC5720712765BA039330C47445 /* KSAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.release.xcconfig; sourceTree = "<group>"; };
+		1976A2FE4F449C8D8BFEFC24215D7909 /* KSAdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSAdSDK.xcframework; sourceTree = "<group>"; };
 		19BB5BA4909FA596014E81B97048BE2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1D3C47165B0F3F3E2F934F7A7E24D2F8 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		1F8E51CDD6A1CA421700590D3837275B /* BaiduMobAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduMobAdSDK.debug.xcconfig; sourceTree = "<group>"; };
-		20B924F1FA3D4A6AB6B42A20AE4B9A2C /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		2038C13C8C37571F2DAE5CC84B31431A /* GDTRewardVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkConnectorProtocol.h; path = lib/GDTRewardVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		223643AC50D35B1B36B067DFFC10D43C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		230711915E987D2C1E4CB52C1F9D0514 /* GDTAdProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdProtocol.h; path = lib/GDTAdProtocol.h; sourceTree = "<group>"; };
+		24FA24F1D66BC30262844B105E027574 /* GDTNativeExpressAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdNetworkAdapterProtocol.h; path = lib/GDTNativeExpressAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		285758C93A62340337F1779A911FCCAB /* Pods-UBiXMediationSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UBiXMediationSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		289D0DF2B1702B5604A7C777091A7B91 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		2D0486103AC3499E5F72AB6CAC64D6C8 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		2C2AFC2919239B57E1A787E95145858A /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		2DB2495130A5F2BEBDE9A9415CC621E3 /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdView.h; path = lib/GDTNativeExpressAdView.h; sourceTree = "<group>"; };
+		2E744B4F03EE0E4A8BC0EF1335BEB940 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		2EA99D2EC58AF64B143995DFB10714C4 /* GDTMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTMediaView.h; path = lib/GDTMediaView.h; sourceTree = "<group>"; };
+		2FABC2D7B9926D31D5DD362564B26495 /* GDTUnifiedNativeAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdNetworkAdapterProtocol.h; path = lib/GDTUnifiedNativeAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		303029DC617BA025026F346046F16A42 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		32600E08259AC84BFF52164EBB535F33 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3EF6059082330E8FA341D08B61EBE36A /* baidumobadsdk.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = baidumobadsdk.bundle; sourceTree = "<group>"; };
+		3960ED09B8A3601C7E152A9B3135CDFF /* GDTUnifiedInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAd.h; path = lib/GDTUnifiedInterstitialAd.h; sourceTree = "<group>"; };
 		45D1A4F62CF9A45CC20DFB1389497699 /* UBiXMediationSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = UBiXMediationSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46621DAB5D3EE1EE3D8E6A3916AB1414 /* Pods-UBiXMediationSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UBiXMediationSDK_Example.modulemap"; sourceTree = "<group>"; };
-		4A9BB870C548DB841196B46A8A67E3EF /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		47E3D7E92B3AFE1E8388E30CD85ABBE7 /* GDTServerSideVerificationOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTServerSideVerificationOptions.h; path = lib/GDTServerSideVerificationOptions.h; sourceTree = "<group>"; };
 		4DAABC6343CE829A3D4EABDF89FA7486 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4F77EBC05454DF797879D7665E94690D /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		54C0757E1A27521B199E8457F08E0421 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		4F154174C67F4FE0A4EE621BDD76BD06 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		50D4A8CE8D9B8B3DC701CF9BD2B1D0FA /* GDTUnifiedNativeAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdNetworkConnectorProtocol.h; path = lib/GDTUnifiedNativeAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5ADD323748ECA207A73D4B292FC38508 /* GDTServerBiddingResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTServerBiddingResult.h; path = lib/GDTServerBiddingResult.h; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6342B8A5CCC159AEE8A61B6939A8AB /* JADYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JADYun.debug.xcconfig; sourceTree = "<group>"; };
 		6141F2E67C0BFEAA00ED159F1E0E3B35 /* UBiXMediationSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UBiXMediationSDK.release.xcconfig; sourceTree = "<group>"; };
 		630E06F1A35060566192E7FE6D4F396A /* Pods-UBiXMediationSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UBiXMediationSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6325FD6A23A35BB659B5E30F4480CE60 /* UbiXAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UbiXAdSDK.framework; path = UBiXMediationSDK/SDK/UbiXAdSDK.framework; sourceTree = "<group>"; };
 		63AA238E5EE8BE075706E028E12E8B79 /* Pods-UBiXMediationSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UBiXMediationSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		66BE87EE74C4C23D7FF041313F60ED87 /* GDTLogoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLogoView.h; path = lib/GDTLogoView.h; sourceTree = "<group>"; };
 		686863ECD1AD06600A7A178B5B34B5CC /* Pods-UBiXMediationSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UBiXMediationSDK_Example-Info.plist"; sourceTree = "<group>"; };
 		69C0DA1E400F0BBE873AED460BD48FC7 /* Pods-UBiXMediationSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UBiXMediationSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		6CDC7F1424D5013D2A89CD52D958F21A /* BaiduMobAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMobAdSDK.framework; sourceTree = "<group>"; };
+		70472DDB08BE82309414D3E7A76E3014 /* GDTNativeExpressProAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressProAdView.h; path = lib/GDTNativeExpressProAdView.h; sourceTree = "<group>"; };
+		71C5FF7CD1C83E61DA9A23A7E8F0B655 /* GDTNativeExpressAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdNetworkConnectorProtocol.h; path = lib/GDTNativeExpressAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		73485D44B13CD6623766CFA6ABC64E20 /* GDTRewardVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkAdapterProtocol.h; path = lib/GDTRewardVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		7439F679B3210E37C15438F9371589EA /* Pods-UBiXMediationSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UBiXMediationSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7568591C07BE25CCB7E42F8DC271CED9 /* Pods-UBiXMediationSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UBiXMediationSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		7CA52B2576B19966A116FF6C0275D495 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		76397DD0DAE5840192A1646BD4C3EB94 /* KSAdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "KSAdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		7C947833DC085D9B22C5881BA6758EE8 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		7FFF91DBEF0DE2C2E34D5810544308CA /* GDTSplashZoomOutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashZoomOutView.h; path = lib/GDTSplashZoomOutView.h; sourceTree = "<group>"; };
 		8025EC5032FAB39D52E09D8CF6E89292 /* UBiXMediationSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UBiXMediationSDK.debug.xcconfig; sourceTree = "<group>"; };
-		826226073CDE1314F05FEA8FBA621677 /* JADYun.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JADYun.framework; sourceTree = "<group>"; };
-		84A14BDE852FC57B6F253D0EE71A3161 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		8B1E68ED17C3F1C6C01CD9B725478CA7 /* KSAdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "KSAdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		8B2879BEB3D44C10344924562D504794 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		8FA020FFC01EC24246C986773C0F22F1 /* KSAdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSAdSDK.xcframework; sourceTree = "<group>"; };
-		9180FD1EEE7F5EDE2FC339EBFE90C809 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		97E207BF012559D1FD77610AF336E55D /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		9892CAAD738AEA1F329B0512DC404ED1 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		98BB64D7D4C1165947F6AAD2A906562D /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		990C75F43868FE088AEAFD3303F99E2D /* JADYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JADYun.debug.xcconfig; sourceTree = "<group>"; };
-		9AC384DD1B336ACBE91662D34C031E52 /* BaiduMobAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduMobAdSDK.release.xcconfig; sourceTree = "<group>"; };
-		9CF02A8C0314D6AF08D6E696DCA2E3B6 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		812A4A9E221DCD9B98D30CC9B1277923 /* baidumobadsdk.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = baidumobadsdk.bundle; sourceTree = "<group>"; };
+		836DAD6D7BF19D4B51869EBA0430041B /* JADYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JADYun.release.xcconfig; sourceTree = "<group>"; };
+		84B87A89E2DFB1E53353EF74998801F2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = lib/libGDTMobSDK.a; sourceTree = "<group>"; };
+		851027BA33117880EB502B119278EB67 /* BaiduMobAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduMobAdSDK.release.xcconfig; sourceTree = "<group>"; };
+		8A365F942E3B31D119D5F178D2615736 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		8FBBD088A1D791F89F974357E45C7431 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		90F2AA07B603E85BCEAB77EE3691F93A /* GDTVideoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTVideoConfig.h; path = lib/GDTVideoConfig.h; sourceTree = "<group>"; };
+		927A0918C0772FB157F641358924231B /* GDTSplashAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAdNetworkConnectorProtocol.h; path = lib/GDTSplashAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		984C0E68C4F95E98EE822A74B8D2B40D /* GDTUnifiedNativeAdDataObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdDataObject.h; path = lib/GDTUnifiedNativeAdDataObject.h; sourceTree = "<group>"; };
+		9AE4FFB04C456C688B18E82223ED3214 /* GDTMobSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.debug.xcconfig; sourceTree = "<group>"; };
+		9C54FD1E44895A62763EB3AB27AA973D /* GDTVideoAdReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTVideoAdReporter.h; path = lib/GDTVideoAdReporter.h; sourceTree = "<group>"; };
+		9C60635D47BFF2E2CE21A333CE1E9EF6 /* GDTLoadAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLoadAdParams.h; path = lib/GDTLoadAdParams.h; sourceTree = "<group>"; };
+		9C7E12F1E16B2E619B1A40AC5EC512C0 /* GDTAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdParams.h; path = lib/GDTAdParams.h; sourceTree = "<group>"; };
+		9D3CEF511903D7361E712661EF9B0F4C /* GDTUnifiedInterstitialAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAdNetworkAdapterProtocol.h; path = lib/GDTUnifiedInterstitialAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E470BF0F6609754F39FF147E26123BD /* GDTMobSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.release.xcconfig; sourceTree = "<group>"; };
 		9ED56B8C4D1E4921E46EAE3C2EE66F43 /* Pods-UBiXMediationSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UBiXMediationSDK_Tests.modulemap"; sourceTree = "<group>"; };
-		9FA0C62E8DF70672249B5CFD78E45C31 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		A3546CFAB46E707EE94B811C0A78F2E4 /* Pods-UBiXMediationSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UBiXMediationSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A580146556F13595E9473A6B7317FD23 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		A800A7FDD4907AC95765FC122FC3C011 /* Pods-UBiXMediationSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UBiXMediationSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		ABC26A5973730B6C5128EBFCE95F3C46 /* Pods-UBiXMediationSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UBiXMediationSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AE1808E2DEE5A733FB52D90AADDC407F /* GDTSplashAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAdNetworkAdapterProtocol.h; path = lib/GDTSplashAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		AE875B9C106AF162A960958E254FC23E /* BaiduMobAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMobAdSDK.framework; sourceTree = "<group>"; };
+		AED7E3E67225F01A009BE10391E4A4A1 /* KSAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.release.xcconfig; sourceTree = "<group>"; };
+		B25F1AC5A7535F6F230B71F90C49D167 /* GDTUnifiedNativeAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAd.h; path = lib/GDTUnifiedNativeAd.h; sourceTree = "<group>"; };
 		B33CB63CB01745A24D99FB7F67DEC581 /* Pods-UBiXMediationSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UBiXMediationSDK_Example-resources.sh"; sourceTree = "<group>"; };
-		C73C881C250662252B0DD3B9C3B6C718 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		BAF60CAD8DE34685B8F870AB97009E04 /* GDTPrivacyConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTPrivacyConfiguration.h; path = lib/GDTPrivacyConfiguration.h; sourceTree = "<group>"; };
+		BBB62F268FA0CAE39C666B8BCC392AB2 /* GDTUnifiedBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerView.h; path = lib/GDTUnifiedBannerView.h; sourceTree = "<group>"; };
+		C45D91BFC03726FD676009D80CE47CAD /* GDTUnifiedBannerAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerAdNetworkAdapterProtocol.h; path = lib/GDTUnifiedBannerAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		C6277290D9AD7AEC5B910F906B128DBA /* JADYun.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JADYun.framework; sourceTree = "<group>"; };
+		C659F8DA3721C8724DB35DB5AF750C4A /* GDTUnifiedBannerAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerAdNetworkConnectorProtocol.h; path = lib/GDTUnifiedBannerAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		C8C38692FE5415B4AFADA8F4BA50AB53 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		D2A98AF571DEC0A9EC67D9208969F02B /* Pods-UBiXMediationSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UBiXMediationSDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		D3FED884C8C6A34520739231214524B6 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		D57D84970E61D460016AEA4AD559EFD9 /* Pods-UBiXMediationSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UBiXMediationSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D77A2E1F0CA103F92BE4E1F46D769299 /* Pods-UBiXMediationSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UBiXMediationSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		D994C1552F05BD962804499B4C7F5702 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		DAC0B8EBED752E71D319ADBFC2582998 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		E0AC43B22098FBB73A3E689D073A1DA9 /* Pods-UBiXMediationSDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UBiXMediationSDK_Tests"; path = Pods_UBiXMediationSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E175B9629252210925A8384CCB84463F /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		E1852F2F0937B2B9E74990A55C276262 /* KSAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.debug.xcconfig; sourceTree = "<group>"; };
-		E36CE277810FABABE2B5609F8D29AEBB /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		E0FF51BCF7A17D78083AC36AB94B9564 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		E1518354A69C71EEB764C8FA5EAAE8E0 /* GDTSDKConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKConfig.h; path = lib/GDTSDKConfig.h; sourceTree = "<group>"; };
+		E1974BCBA43B8DBDB3422FBD7E44730D /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		E2812A0F1F98C589D022B5FE2669FF64 /* GDTUnifiedInterstitialAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAdNetworkConnectorProtocol.h; path = lib/GDTUnifiedInterstitialAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		E59DF79E0A6172BF179A4BDD03D13FF7 /* Pods-UBiXMediationSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UBiXMediationSDK_Example"; path = Pods_UBiXMediationSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E914C1FCDA07DDBBE5E3F5B88A3C4421 /* GDTNativeExpressAdViewAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdViewAdapterProtocol.h; path = lib/GDTNativeExpressAdViewAdapterProtocol.h; sourceTree = "<group>"; };
 		EA4134BCDB75793280CABCE277D79DB9 /* UbiXMediation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UbiXMediation.framework; path = UBiXMediationSDK/SDK/UbiXMediation.framework; sourceTree = "<group>"; };
 		EA4C473531CE03B7771F2C06D4415AE5 /* UbiXDaq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UbiXDaq.framework; path = UBiXMediationSDK/SDK/UbiXDaq.framework; sourceTree = "<group>"; };
-		F803B7173A22C66122B80E06467CF08F /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		ED30632FF4B0FD0A50B74DEA5B4CD5FC /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		EEFDCCECC9A6AC2F212CE4AD97B5DF8A /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		EF7766E009A5772F30CD545AED3E3C84 /* GDTRewardVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAd.h; path = lib/GDTRewardVideoAd.h; sourceTree = "<group>"; };
+		F055CB47464B87D2C8BDFB3355179843 /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAd.h; path = lib/GDTNativeExpressAd.h; sourceTree = "<group>"; };
+		F3053E95AF32134BBE414F1150F894FC /* GDTBaseAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTBaseAdNetworkAdapterProtocol.h; path = lib/GDTBaseAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		F563644F5D96EFA281BBD64DCD658D12 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		F5F0C6B3BFC336EE9BCC5BAC1CBF4C28 /* GDTAdTestSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdTestSetting.h; path = lib/GDTAdTestSetting.h; sourceTree = "<group>"; };
+		F6CD1C401145F7FA34ED4559BCD92D05 /* BaiduMobAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduMobAdSDK.debug.xcconfig; sourceTree = "<group>"; };
+		FA20C24271DCC69FFE19088B31BB65CF /* KSAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.debug.xcconfig; sourceTree = "<group>"; };
+		FB761012D282E7F79648C22774070F47 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		FBFE150ADD32371EDF39AF71872FD7FE /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C29F51CB3EC7B321EC9099C0B727E89 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				763808C373B126E41C0FDD21B66CEF36 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7011F81ED24B26F986912182987439A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AAA9C6A84241A878501A375D64ACA517 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94D7E08F7EED9A85F46AF1C5DB02C78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B1CD40C49CB069784F319FA33092A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,19 +312,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B9CE24FF8041C7027FC990AC87E618C /* Support Files */ = {
+		0BE8F44E86BA31A0D7F502B687AE1287 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9892CAAD738AEA1F329B0512DC404ED1 /* FBSnapshotTestCase.modulemap */,
-				289D0DF2B1702B5604A7C777091A7B91 /* FBSnapshotTestCase-dummy.m */,
-				E36CE277810FABABE2B5609F8D29AEBB /* FBSnapshotTestCase-Info.plist */,
-				4F77EBC05454DF797879D7665E94690D /* FBSnapshotTestCase-prefix.pch */,
-				D994C1552F05BD962804499B4C7F5702 /* FBSnapshotTestCase-umbrella.h */,
-				9180FD1EEE7F5EDE2FC339EBFE90C809 /* FBSnapshotTestCase.debug.xcconfig */,
-				D3FED884C8C6A34520739231214524B6 /* FBSnapshotTestCase.release.xcconfig */,
+				5C6342B8A5CCC159AEE8A61B6939A8AB /* JADYun.debug.xcconfig */,
+				836DAD6D7BF19D4B51869EBA0430041B /* JADYun.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/FBSnapshotTestCase";
+			path = "../Target Support Files/JADYun";
+			sourceTree = "<group>";
+		};
+		0C082753F7A81FE601B200445A9540ED /* GDTMobSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A06D8DA0D72536E713AAEF8FFA89C68E /* GDTMobSDK */,
+				5A4A24D370345B00B1BB7277BA578A8A /* Support Files */,
+			);
+			name = GDTMobSDK;
+			path = GDTMobSDK;
 			sourceTree = "<group>";
 		};
 		15DB94DF9B44E0EE13E4FD54BA2F2C79 /* Targets Support Files */ = {
@@ -269,46 +339,6 @@
 				5C4199E1529AB6E478A0A24DA46FD654 /* Pods-UBiXMediationSDK_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		1C1A3884D7E97C831CEBBD5EE6FA6E63 /* SwiftSupport */ = {
-			isa = PBXGroup;
-			children = (
-				2D0486103AC3499E5F72AB6CAC64D6C8 /* SwiftSupport.swift */,
-			);
-			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		2097C1DECBB1496B0272A89BF1BB2B8A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				20B924F1FA3D4A6AB6B42A20AE4B9A2C /* FBSnapshotTestCase.h */,
-				9CF02A8C0314D6AF08D6E696DCA2E3B6 /* FBSnapshotTestCase.m */,
-				54C0757E1A27521B199E8457F08E0421 /* FBSnapshotTestCasePlatform.h */,
-				8B2879BEB3D44C10344924562D504794 /* FBSnapshotTestCasePlatform.m */,
-				98BB64D7D4C1165947F6AAD2A906562D /* FBSnapshotTestController.h */,
-				9FA0C62E8DF70672249B5CFD78E45C31 /* FBSnapshotTestController.m */,
-				7CA52B2576B19966A116FF6C0275D495 /* UIApplication+StrictKeyWindow.h */,
-				4A9BB870C548DB841196B46A8A67E3EF /* UIApplication+StrictKeyWindow.m */,
-				97E207BF012559D1FD77610AF336E55D /* UIImage+Compare.h */,
-				E175B9629252210925A8384CCB84463F /* UIImage+Compare.m */,
-				84A14BDE852FC57B6F253D0EE71A3161 /* UIImage+Diff.h */,
-				00DD3B60F32A3F993207D351CC5FCE85 /* UIImage+Diff.m */,
-				F803B7173A22C66122B80E06467CF08F /* UIImage+Snapshot.h */,
-				C73C881C250662252B0DD3B9C3B6C718 /* UIImage+Snapshot.m */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		2A17EDAA9D56CE4DFEE19730E06337E9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8B1E68ED17C3F1C6C01CD9B725478CA7 /* KSAdSDK-xcframeworks.sh */,
-				E1852F2F0937B2B9E74990A55C276262 /* KSAdSDK.debug.xcconfig */,
-				182B77AC5720712765BA039330C47445 /* KSAdSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/KSAdSDK";
 			sourceTree = "<group>";
 		};
 		2BE46A59335A94FDCF8368F69645E549 /* Pod */ = {
@@ -321,51 +351,53 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		30DBB6BCF5D42673B3F74EFE8FD45203 /* FBSnapshotTestCase */ = {
+		2D5DB62BBB9CCBE4EE4E8200E4123560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2097C1DECBB1496B0272A89BF1BB2B8A /* Core */,
-				0B9CE24FF8041C7027FC990AC87E618C /* Support Files */,
-				1C1A3884D7E97C831CEBBD5EE6FA6E63 /* SwiftSupport */,
-			);
-			name = FBSnapshotTestCase;
-			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		42746F1B467C671734573310E5EB7E7A /* KSAdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				4D115D4CC1F18410AB189FD637948CE2 /* Frameworks */,
-				2A17EDAA9D56CE4DFEE19730E06337E9 /* Support Files */,
-			);
-			name = KSAdSDK;
-			path = KSAdSDK;
-			sourceTree = "<group>";
-		};
-		4D115D4CC1F18410AB189FD637948CE2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8FA020FFC01EC24246C986773C0F22F1 /* KSAdSDK.xcframework */,
+				84B87A89E2DFB1E53353EF74998801F2 /* libGDTMobSDK.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		52584C30CA1B322715E72727EA7479C0 /* JADYun */ = {
+		41F31212AF87A944E29249EAF9C9C833 /* JADYun */ = {
 			isa = PBXGroup;
 			children = (
-				5274D262DC87CC7A69FEA541671FED3E /* Frameworks */,
-				6E50D93ACE67D0C383C201BB0199A339 /* Support Files */,
+				BF28109EDAA25877B9064E09F71FCF47 /* Frameworks */,
+				0BE8F44E86BA31A0D7F502B687AE1287 /* Support Files */,
 			);
 			name = JADYun;
 			path = JADYun;
 			sourceTree = "<group>";
 		};
-		5274D262DC87CC7A69FEA541671FED3E /* Frameworks */ = {
+		46A8FE1D53F52D4DCEBA90706D14DF4E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				826226073CDE1314F05FEA8FBA621677 /* JADYun.framework */,
+				ED30632FF4B0FD0A50B74DEA5B4CD5FC /* FBSnapshotTestCase.h */,
+				7C947833DC085D9B22C5881BA6758EE8 /* FBSnapshotTestCase.m */,
+				EEFDCCECC9A6AC2F212CE4AD97B5DF8A /* FBSnapshotTestCasePlatform.h */,
+				4F154174C67F4FE0A4EE621BDD76BD06 /* FBSnapshotTestCasePlatform.m */,
+				E0FF51BCF7A17D78083AC36AB94B9564 /* FBSnapshotTestController.h */,
+				DAC0B8EBED752E71D319ADBFC2582998 /* FBSnapshotTestController.m */,
+				C8C38692FE5415B4AFADA8F4BA50AB53 /* UIApplication+StrictKeyWindow.h */,
+				8A365F942E3B31D119D5F178D2615736 /* UIApplication+StrictKeyWindow.m */,
+				E1974BCBA43B8DBDB3422FBD7E44730D /* UIImage+Compare.h */,
+				1407A68FCB5D27D57FA099D79F183E99 /* UIImage+Compare.m */,
+				1D3C47165B0F3F3E2F934F7A7E24D2F8 /* UIImage+Diff.h */,
+				303029DC617BA025026F346046F16A42 /* UIImage+Diff.m */,
+				2C2AFC2919239B57E1A787E95145858A /* UIImage+Snapshot.h */,
+				2E744B4F03EE0E4A8BC0EF1335BEB940 /* UIImage+Snapshot.m */,
 			);
-			name = Frameworks;
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4CADF39690BFFBC6761325A4E01B5411 /* KSAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				837BFAFBE5088130348FB8BB35F4FB77 /* Frameworks */,
+				EF7DA165FCDFB4708AC63032669D8CA1 /* Support Files */,
+			);
+			name = KSAdSDK;
+			path = KSAdSDK;
 			sourceTree = "<group>";
 		};
 		53C07F72C94B6565FEF67870179A2AFD /* Frameworks */ = {
@@ -376,6 +408,16 @@
 				EA4134BCDB75793280CABCE277D79DB9 /* UbiXMediation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A4A24D370345B00B1BB7277BA578A8A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4FFB04C456C688B18E82223ED3214 /* GDTMobSDK.debug.xcconfig */,
+				9E470BF0F6609754F39FF147E26123BD /* GDTMobSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GDTMobSDK";
 			sourceTree = "<group>";
 		};
 		5C4199E1529AB6E478A0A24DA46FD654 /* Pods-UBiXMediationSDK_Tests */ = {
@@ -395,6 +437,24 @@
 			path = "Target Support Files/Pods-UBiXMediationSDK_Tests";
 			sourceTree = "<group>";
 		};
+		608CCF013103C621BEC5B5E96024FC68 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6CD1C401145F7FA34ED4559BCD92D05 /* BaiduMobAdSDK.debug.xcconfig */,
+				851027BA33117880EB502B119278EB67 /* BaiduMobAdSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BaiduMobAdSDK";
+			sourceTree = "<group>";
+		};
+		63E85C38C0D3CC56EFB382C55699F200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE875B9C106AF162A960958E254FC23E /* BaiduMobAdSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		658268F79712E50DE05FDF065AD18D66 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,52 +465,85 @@
 			path = "Example/Pods/Target Support Files/UBiXMediationSDK";
 			sourceTree = "<group>";
 		};
-		66DE4AC433D414D021BFD92C2F6B345A /* Resources */ = {
+		7E4A47D3F25C9BFC47FB43C6FBE69BD4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3EF6059082330E8FA341D08B61EBE36A /* baidumobadsdk.bundle */,
+				A580146556F13595E9473A6B7317FD23 /* FBSnapshotTestCase.modulemap */,
+				223643AC50D35B1B36B067DFFC10D43C /* FBSnapshotTestCase-dummy.m */,
+				1703D2D501A243BDC2BD02B68712A3B4 /* FBSnapshotTestCase-Info.plist */,
+				FB761012D282E7F79648C22774070F47 /* FBSnapshotTestCase-prefix.pch */,
+				32600E08259AC84BFF52164EBB535F33 /* FBSnapshotTestCase-umbrella.h */,
+				F563644F5D96EFA281BBD64DCD658D12 /* FBSnapshotTestCase.debug.xcconfig */,
+				8FBBD088A1D791F89F974357E45C7431 /* FBSnapshotTestCase.release.xcconfig */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		6E193481986E1DD9DD913E46A04912C7 /* Frameworks */ = {
+		837BFAFBE5088130348FB8BB35F4FB77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CDC7F1424D5013D2A89CD52D958F21A /* BaiduMobAdSDK.framework */,
+				1976A2FE4F449C8D8BFEFC24215D7909 /* KSAdSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6E50D93ACE67D0C383C201BB0199A339 /* Support Files */ = {
+		8BCF2E1A2C591F885DB8FE0E9E9EB33E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				990C75F43868FE088AEAFD3303F99E2D /* JADYun.debug.xcconfig */,
-				168938DFBEE6EBAE5C41D653834AA46A /* JADYun.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JADYun";
-			sourceTree = "<group>";
-		};
-		AB3C6C728682E97D4780D83B2D17A48F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B82A286694ADBDCD19DD21A83297A1C6 /* BaiduMobAdSDK */,
-				30DBB6BCF5D42673B3F74EFE8FD45203 /* FBSnapshotTestCase */,
-				52584C30CA1B322715E72727EA7479C0 /* JADYun */,
-				42746F1B467C671734573310E5EB7E7A /* KSAdSDK */,
+				CA479754FDD77582B4BFC61317D6A4F7 /* BaiduMobAdSDK */,
+				C8848B8CBBD010DC9D46FF5AB80A5FE2 /* FBSnapshotTestCase */,
+				0C082753F7A81FE601B200445A9540ED /* GDTMobSDK */,
+				41F31212AF87A944E29249EAF9C9C833 /* JADYun */,
+				4CADF39690BFFBC6761325A4E01B5411 /* KSAdSDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B82A286694ADBDCD19DD21A83297A1C6 /* BaiduMobAdSDK */ = {
+		A06D8DA0D72536E713AAEF8FFA89C68E /* GDTMobSDK */ = {
 			isa = PBXGroup;
 			children = (
-				6E193481986E1DD9DD913E46A04912C7 /* Frameworks */,
-				66DE4AC433D414D021BFD92C2F6B345A /* Resources */,
-				C83B28FB17FC63474592693EE3D4A120 /* Support Files */,
+				9C7E12F1E16B2E619B1A40AC5EC512C0 /* GDTAdParams.h */,
+				230711915E987D2C1E4CB52C1F9D0514 /* GDTAdProtocol.h */,
+				F5F0C6B3BFC336EE9BCC5BAC1CBF4C28 /* GDTAdTestSetting.h */,
+				F3053E95AF32134BBE414F1150F894FC /* GDTBaseAdNetworkAdapterProtocol.h */,
+				9C60635D47BFF2E2CE21A333CE1E9EF6 /* GDTLoadAdParams.h */,
+				66BE87EE74C4C23D7FF041313F60ED87 /* GDTLogoView.h */,
+				2EA99D2EC58AF64B143995DFB10714C4 /* GDTMediaView.h */,
+				F055CB47464B87D2C8BDFB3355179843 /* GDTNativeExpressAd.h */,
+				24FA24F1D66BC30262844B105E027574 /* GDTNativeExpressAdNetworkAdapterProtocol.h */,
+				71C5FF7CD1C83E61DA9A23A7E8F0B655 /* GDTNativeExpressAdNetworkConnectorProtocol.h */,
+				2DB2495130A5F2BEBDE9A9415CC621E3 /* GDTNativeExpressAdView.h */,
+				E914C1FCDA07DDBBE5E3F5B88A3C4421 /* GDTNativeExpressAdViewAdapterProtocol.h */,
+				70472DDB08BE82309414D3E7A76E3014 /* GDTNativeExpressProAdView.h */,
+				BAF60CAD8DE34685B8F870AB97009E04 /* GDTPrivacyConfiguration.h */,
+				EF7766E009A5772F30CD545AED3E3C84 /* GDTRewardVideoAd.h */,
+				73485D44B13CD6623766CFA6ABC64E20 /* GDTRewardVideoAdNetworkAdapterProtocol.h */,
+				2038C13C8C37571F2DAE5CC84B31431A /* GDTRewardVideoAdNetworkConnectorProtocol.h */,
+				E1518354A69C71EEB764C8FA5EAAE8E0 /* GDTSDKConfig.h */,
+				147579FD3C92CDA3DBDFD64D613DF48B /* GDTSDKDefines.h */,
+				5ADD323748ECA207A73D4B292FC38508 /* GDTServerBiddingResult.h */,
+				47E3D7E92B3AFE1E8388E30CD85ABBE7 /* GDTServerSideVerificationOptions.h */,
+				088294BA324CB90BFEA6309B7D0E2A9D /* GDTSplashAd.h */,
+				AE1808E2DEE5A733FB52D90AADDC407F /* GDTSplashAdNetworkAdapterProtocol.h */,
+				927A0918C0772FB157F641358924231B /* GDTSplashAdNetworkConnectorProtocol.h */,
+				7FFF91DBEF0DE2C2E34D5810544308CA /* GDTSplashZoomOutView.h */,
+				C45D91BFC03726FD676009D80CE47CAD /* GDTUnifiedBannerAdNetworkAdapterProtocol.h */,
+				C659F8DA3721C8724DB35DB5AF750C4A /* GDTUnifiedBannerAdNetworkConnectorProtocol.h */,
+				BBB62F268FA0CAE39C666B8BCC392AB2 /* GDTUnifiedBannerView.h */,
+				3960ED09B8A3601C7E152A9B3135CDFF /* GDTUnifiedInterstitialAd.h */,
+				9D3CEF511903D7361E712661EF9B0F4C /* GDTUnifiedInterstitialAdNetworkAdapterProtocol.h */,
+				E2812A0F1F98C589D022B5FE2669FF64 /* GDTUnifiedInterstitialAdNetworkConnectorProtocol.h */,
+				B25F1AC5A7535F6F230B71F90C49D167 /* GDTUnifiedNativeAd.h */,
+				984C0E68C4F95E98EE822A74B8D2B40D /* GDTUnifiedNativeAdDataObject.h */,
+				2FABC2D7B9926D31D5DD362564B26495 /* GDTUnifiedNativeAdNetworkAdapterProtocol.h */,
+				50D4A8CE8D9B8B3DC701CF9BD2B1D0FA /* GDTUnifiedNativeAdNetworkConnectorProtocol.h */,
+				08EADA8BA62F220006A9D27240F8FFA9 /* GDTUnifiedNativeAdView.h */,
+				9C54FD1E44895A62763EB3AB27AA973D /* GDTVideoAdReporter.h */,
+				90F2AA07B603E85BCEAB77EE3691F93A /* GDTVideoConfig.h */,
+				2D5DB62BBB9CCBE4EE4E8200E4123560 /* Frameworks */,
 			);
-			name = BaiduMobAdSDK;
-			path = BaiduMobAdSDK;
+			name = GDTMobSDK;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
@@ -471,14 +564,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C83B28FB17FC63474592693EE3D4A120 /* Support Files */ = {
+		BF28109EDAA25877B9064E09F71FCF47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F8E51CDD6A1CA421700590D3837275B /* BaiduMobAdSDK.debug.xcconfig */,
-				9AC384DD1B336ACBE91662D34C031E52 /* BaiduMobAdSDK.release.xcconfig */,
+				C6277290D9AD7AEC5B910F906B128DBA /* JADYun.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/BaiduMobAdSDK";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C06F00EF0D255CBF2DB514E586A915D2 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				FBFE150ADD32371EDF39AF71872FD7FE /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		C8848B8CBBD010DC9D46FF5AB80A5FE2 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				46A8FE1D53F52D4DCEBA90706D14DF4E /* Core */,
+				7E4A47D3F25C9BFC47FB43C6FBE69BD4 /* Support Files */,
+				C06F00EF0D255CBF2DB514E586A915D2 /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		CA479754FDD77582B4BFC61317D6A4F7 /* BaiduMobAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				63E85C38C0D3CC56EFB382C55699F200 /* Frameworks */,
+				DB7F6971E63767842713047692ED52E2 /* Resources */,
+				608CCF013103C621BEC5B5E96024FC68 /* Support Files */,
+			);
+			name = BaiduMobAdSDK;
+			path = BaiduMobAdSDK;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -487,10 +608,29 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				F6002FDEB9B94773DEF940A77F15BF49 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				AB3C6C728682E97D4780D83B2D17A48F /* Pods */,
+				8BCF2E1A2C591F885DB8FE0E9E9EB33E /* Pods */,
 				BE6D0D5BBACA4D6DABB5BAD626683D6D /* Products */,
 				15DB94DF9B44E0EE13E4FD54BA2F2C79 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		DB7F6971E63767842713047692ED52E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				812A4A9E221DCD9B98D30CC9B1277923 /* baidumobadsdk.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EF7DA165FCDFB4708AC63032669D8CA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76397DD0DAE5840192A1646BD4C3EB94 /* KSAdSDK-xcframeworks.sh */,
+				FA20C24271DCC69FFE19088B31BB65CF /* KSAdSDK.debug.xcconfig */,
+				AED7E3E67225F01A009BE10391E4A4A1 /* KSAdSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KSAdSDK";
 			sourceTree = "<group>";
 		};
 		F31CE570D778EE84C6A01A6943990606 /* Pods-UBiXMediationSDK_Example */ = {
@@ -544,19 +684,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0B5389C30ECC522CF79EBAED11D104E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED5C21EE96CEE6A52A49C75A71B1D20 /* Pods-UBiXMediationSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75293C2459C460D4CD7106B1BE6B27ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				941ADDFF96FACF405B453D4B981A1396 /* Pods-UBiXMediationSDK_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7FEA39411EBD68579E6F4906A2B0F89A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A3F63DF0D2C2B6D8E110378EBD29DE61 /* Pods-UBiXMediationSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,20 +720,21 @@
 /* Begin PBXNativeTarget section */
 		4856E78EDA7077AD642FEBF0FDAC3DD3 /* Pods-UBiXMediationSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3229122008231084BCC1D4D26BC004CC /* Build configuration list for PBXNativeTarget "Pods-UBiXMediationSDK_Example" */;
+			buildConfigurationList = 6A577EEC6AF3F36B801D04C3730B5658 /* Build configuration list for PBXNativeTarget "Pods-UBiXMediationSDK_Example" */;
 			buildPhases = (
-				7FEA39411EBD68579E6F4906A2B0F89A /* Headers */,
-				A5556E585590B8E921FA7BFD03148F5C /* Sources */,
-				6C29F51CB3EC7B321EC9099C0B727E89 /* Frameworks */,
-				726A021F90F0DE15767A815F557AD2B0 /* Resources */,
+				0B5389C30ECC522CF79EBAED11D104E0 /* Headers */,
+				5C14A0DE7E8EBD7C3B0E1AC71EA9FCD3 /* Sources */,
+				A94D7E08F7EED9A85F46AF1C5DB02C78 /* Frameworks */,
+				B0BF99EB470F5F9A68ACFF7918472F3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CB6BE663767043CA68562B0EBCAFDF0E /* PBXTargetDependency */,
-				0518EC9C8E02D0B595ED35CF806D23E4 /* PBXTargetDependency */,
-				021B8F2C92925D4ABECA5E9C237DDFA6 /* PBXTargetDependency */,
-				EE897680BAAD74A0D9D682C2C1D0C575 /* PBXTargetDependency */,
+				6279820203D678A90EFAF8B4AD5B6D0D /* PBXTargetDependency */,
+				56F71B64DB28EA368D49C218AA7DD05B /* PBXTargetDependency */,
+				56662FF5A0D3F1FF7F73FA3D60FFC2BE /* PBXTargetDependency */,
+				822EF96AB92AADF3431383037C4844FC /* PBXTargetDependency */,
+				795C954275191860C26C23F96BC2C3EC /* PBXTargetDependency */,
 			);
 			name = "Pods-UBiXMediationSDK_Example";
 			productName = Pods_UBiXMediationSDK_Example;
@@ -630,8 +771,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				8149C48FBF06931E05B7E0F7638255DE /* PBXTargetDependency */,
-				3344DE70F949E49EF6AD91BC0CB56220 /* PBXTargetDependency */,
+				D8B8A80BA231A5B34B2787BA2A33C7A4 /* PBXTargetDependency */,
+				F85056B14178F4FD652B2023B4BC03E5 /* PBXTargetDependency */,
 			);
 			name = "Pods-UBiXMediationSDK_Tests";
 			productName = Pods_UBiXMediationSDK_Tests;
@@ -662,6 +803,7 @@
 			targets = (
 				A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */,
 				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */,
 				940F0EDB82A2640A378CA0D36C9E53F7 /* JADYun */,
 				53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */,
 				4856E78EDA7077AD642FEBF0FDAC3DD3 /* Pods-UBiXMediationSDK_Example */,
@@ -679,14 +821,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		726A021F90F0DE15767A815F557AD2B0 /* Resources */ = {
+		72D9DA9F7FDD81CF49AF08D2BEF91349 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72D9DA9F7FDD81CF49AF08D2BEF91349 /* Resources */ = {
+		B0BF99EB470F5F9A68ACFF7918472F3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -717,19 +859,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C14A0DE7E8EBD7C3B0E1AC71EA9FCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACCAEAFD67E82642C9868AD3BEE8DF0 /* Pods-UBiXMediationSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D4C7D2B313EC078A0640BDBD21652FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F86DD1CCC4CBA2B5B27F54D9C1594B6E /* Pods-UBiXMediationSDK_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5556E585590B8E921FA7BFD03148F5C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F20D802FB528FF9DF21475BE20C0399 /* Pods-UBiXMediationSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,66 +894,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		021B8F2C92925D4ABECA5E9C237DDFA6 /* PBXTargetDependency */ = {
+		16E2E757F74D597CF0643B9419B2B7D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KSAdSDK;
 			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
-			targetProxy = A6E5501FFBCD6530BE88860268E7D639 /* PBXContainerItemProxy */;
+			targetProxy = A915E549C1FDF301EDC8064D0D7DF6EC /* PBXContainerItemProxy */;
 		};
-		0518EC9C8E02D0B595ED35CF806D23E4 /* PBXTargetDependency */ = {
+		39F85A4B22E53F1A3C4DC1CD343B154B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JADYun;
 			target = 940F0EDB82A2640A378CA0D36C9E53F7 /* JADYun */;
-			targetProxy = 0A91A7D81541EE20B6A405031538C562 /* PBXContainerItemProxy */;
+			targetProxy = E999737CE2F36D3447E11EE4259261CD /* PBXContainerItemProxy */;
 		};
-		3344DE70F949E49EF6AD91BC0CB56220 /* PBXTargetDependency */ = {
+		4C879DA376546B05BAE447AA9CA18D5C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-UBiXMediationSDK_Example";
-			target = 4856E78EDA7077AD642FEBF0FDAC3DD3 /* Pods-UBiXMediationSDK_Example */;
-			targetProxy = D35339EBF1E6456279C71DEA8E29C031 /* PBXContainerItemProxy */;
+			name = GDTMobSDK;
+			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
+			targetProxy = 35E4F5C20D129E80DEBFD2554DD8B176 /* PBXContainerItemProxy */;
 		};
-		3601E4AE3A5B64AF7BAC8953BF713D7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BaiduMobAdSDK;
-			target = A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */;
-			targetProxy = BE7ECB9FCEE0F4B3032C320ECE728AD8 /* PBXContainerItemProxy */;
-		};
-		72FB9BF1476130D68E98B4D922BE3329 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSAdSDK;
-			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
-			targetProxy = 81E0317DF20E2FF9A3A2A663F3CF7501 /* PBXContainerItemProxy */;
-		};
-		8149C48FBF06931E05B7E0F7638255DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 37E038D4D304ED52B56905A0CE84A5C5 /* PBXContainerItemProxy */;
-		};
-		8A0D8B6F5C38EA49E17EBFEF13EEE31D /* PBXTargetDependency */ = {
+		56662FF5A0D3F1FF7F73FA3D60FFC2BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JADYun;
 			target = 940F0EDB82A2640A378CA0D36C9E53F7 /* JADYun */;
-			targetProxy = 873CBD6C53D7ACDA1A807A24FE293F2B /* PBXContainerItemProxy */;
+			targetProxy = 496C08D1A0A7C66830646047D787BAF6 /* PBXContainerItemProxy */;
 		};
-		CB6BE663767043CA68562B0EBCAFDF0E /* PBXTargetDependency */ = {
+		56F71B64DB28EA368D49C218AA7DD05B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDTMobSDK;
+			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
+			targetProxy = 85BDC5FB01B03717FA7B1CB035FBA730 /* PBXContainerItemProxy */;
+		};
+		6279820203D678A90EFAF8B4AD5B6D0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BaiduMobAdSDK;
 			target = A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */;
-			targetProxy = 038F58043A6A61D704E788755AF945E7 /* PBXContainerItemProxy */;
+			targetProxy = 19E6B15E94CC013D215745B4B996345B /* PBXContainerItemProxy */;
 		};
-		EE897680BAAD74A0D9D682C2C1D0C575 /* PBXTargetDependency */ = {
+		795C954275191860C26C23F96BC2C3EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UBiXMediationSDK;
 			target = F0DE4F2DDE5AE4CFFE4EAABEC652EC2F /* UBiXMediationSDK */;
-			targetProxy = 0A12C5886B25FC02CBE27202636A973E /* PBXContainerItemProxy */;
+			targetProxy = 877998AFDA78C034BD091AE9B54FF521 /* PBXContainerItemProxy */;
+		};
+		822EF96AB92AADF3431383037C4844FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSAdSDK;
+			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
+			targetProxy = 46500112EBC511EFB8DA13B1E29B235D /* PBXContainerItemProxy */;
+		};
+		D309ED31A0B7BF573F2CA9805EC54F20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BaiduMobAdSDK;
+			target = A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */;
+			targetProxy = 184F81803344A0F708DF4AD36CC0B46F /* PBXContainerItemProxy */;
+		};
+		D8B8A80BA231A5B34B2787BA2A33C7A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 1D8B606A5A7ACA09B24235FB98CCB541 /* PBXContainerItemProxy */;
+		};
+		F85056B14178F4FD652B2023B4BC03E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UBiXMediationSDK_Example";
+			target = 4856E78EDA7077AD642FEBF0FDAC3DD3 /* Pods-UBiXMediationSDK_Example */;
+			targetProxy = 22D06980964B4365EDD35D3712C3DAAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3FED884C8C6A34520739231214524B6 /* FBSnapshotTestCase.release.xcconfig */;
+			baseConfigurationReference = 8FBBD088A1D791F89F974357E45C7431 /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -840,76 +994,9 @@
 			};
 			name = Release;
 		};
-		115D75AFD5326E2BB1604B8A531978DF /* Debug */ = {
+		0D8F24A403FA16E6CC7FDA78B6BF4E48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 630E06F1A35060566192E7FE6D4F396A /* Pods-UBiXMediationSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1B592E1E7B7C4CCED89C0BEE151C08CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 285758C93A62340337F1779A911FCCAB /* Pods-UBiXMediationSDK_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1DF19C4CC608E7CC84BF0B47E06A727A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6141F2E67C0BFEAA00ED159F1E0E3B35 /* UBiXMediationSDK.release.xcconfig */;
+			baseConfigurationReference = 9E470BF0F6609754F39FF147E26123BD /* GDTMobSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -923,7 +1010,7 @@
 		};
 		6A8EAD531EC3D839ADA149C33DF19B07 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F8E51CDD6A1CA421700590D3837275B /* BaiduMobAdSDK.debug.xcconfig */;
+			baseConfigurationReference = F6CD1C401145F7FA34ED4559BCD92D05 /* BaiduMobAdSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -936,7 +1023,7 @@
 		};
 		6C92B62C83149077AC8336A37E81125E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 990C75F43868FE088AEAFD3303F99E2D /* JADYun.debug.xcconfig */;
+			baseConfigurationReference = 5C6342B8A5CCC159AEE8A61B6939A8AB /* JADYun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1011,7 +1098,7 @@
 		};
 		842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9180FD1EEE7F5EDE2FC339EBFE90C809 /* FBSnapshotTestCase.debug.xcconfig */;
+			baseConfigurationReference = F563644F5D96EFA281BBD64DCD658D12 /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1041,7 +1128,7 @@
 		};
 		86B6EC7256D7E45794A6C97A180BBA98 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AC384DD1B336ACBE91662D34C031E52 /* BaiduMobAdSDK.release.xcconfig */;
+			baseConfigurationReference = 851027BA33117880EB502B119278EB67 /* BaiduMobAdSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1086,7 +1173,55 @@
 			};
 			name = Debug;
 		};
-		BD144E398BDBCCE7E0FBC6D59A64AD62 /* Debug */ = {
+		90C424C6ABC0B1187A311C8A5E9A77C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6141F2E67C0BFEAA00ED159F1E0E3B35 /* UBiXMediationSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CF6E28BEE9D37FE65E67D5F94065C46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285758C93A62340337F1779A911FCCAB /* Pods-UBiXMediationSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BCD179DC9EA8E5638595CF1890E64C3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8025EC5032FAB39D52E09D8CF6E89292 /* UBiXMediationSDK.debug.xcconfig */;
 			buildSettings = {
@@ -1099,9 +1234,22 @@
 			};
 			name = Debug;
 		};
+		C65936C7F7042849AA26EBBDED32943F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE4FFB04C456C688B18E82223ED3214 /* GDTMobSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		CD72675D8314FC8A3869E08C71FF238C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1852F2F0937B2B9E74990A55C276262 /* KSAdSDK.debug.xcconfig */;
+			baseConfigurationReference = FA20C24271DCC69FFE19088B31BB65CF /* KSAdSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1180,7 +1328,7 @@
 		};
 		EDC6C4581C1226B58C5C75CF8FEB49CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 182B77AC5720712765BA039330C47445 /* KSAdSDK.release.xcconfig */;
+			baseConfigurationReference = AED7E3E67225F01A009BE10391E4A4A1 /* KSAdSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1194,7 +1342,7 @@
 		};
 		F340DA84350FA5B4A1F5ACC8BD0179C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 168938DFBEE6EBAE5C41D653834AA46A /* JADYun.release.xcconfig */;
+			baseConfigurationReference = 836DAD6D7BF19D4B51869EBA0430041B /* JADYun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1240,9 +1388,60 @@
 			};
 			name = Release;
 		};
+		FFF5404C594A5689A2F38D8780B34D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630E06F1A35060566192E7FE6D4F396A /* Pods-UBiXMediationSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UBiXMediationSDK_Example/Pods-UBiXMediationSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0309545F02A2C5FAD73419BB6E4D0912 /* Build configuration list for PBXAggregateTarget "UBiXMediationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCD179DC9EA8E5638595CF1890E64C3C /* Debug */,
+				90C424C6ABC0B1187A311C8A5E9A77C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6AEFC3189ED1E6EBD94C30A4CFB889 /* Build configuration list for PBXAggregateTarget "GDTMobSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C65936C7F7042849AA26EBBDED32943F /* Debug */,
+				0D8F24A403FA16E6CC7FDA78B6BF4E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		277F351AC40B2907BE927801ADD6C5A4 /* Build configuration list for PBXNativeTarget "Pods-UBiXMediationSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1257,15 +1456,6 @@
 			buildConfigurations = (
 				842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */,
 				0CF977E736A9F0297ED689DCD07C3E1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3229122008231084BCC1D4D26BC004CC /* Build configuration list for PBXNativeTarget "Pods-UBiXMediationSDK_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				115D75AFD5326E2BB1604B8A531978DF /* Debug */,
-				1B592E1E7B7C4CCED89C0BEE151C08CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1288,20 +1478,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6A577EEC6AF3F36B801D04C3730B5658 /* Build configuration list for PBXNativeTarget "Pods-UBiXMediationSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFF5404C594A5689A2F38D8780B34D19 /* Debug */,
+				9CF6E28BEE9D37FE65E67D5F94065C46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		90C420B06D38BC748A671578D39F1C69 /* Build configuration list for PBXAggregateTarget "JADYun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C92B62C83149077AC8336A37E81125E /* Debug */,
 				F340DA84350FA5B4A1F5ACC8BD0179C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		973BB358C8966506A3DD6CF0E453D2EA /* Build configuration list for PBXAggregateTarget "UBiXMediationSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BD144E398BDBCCE7E0FBC6D59A64AD62 /* Debug */,
-				1DF19C4CC608E7CC84BF0B47E06A727A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

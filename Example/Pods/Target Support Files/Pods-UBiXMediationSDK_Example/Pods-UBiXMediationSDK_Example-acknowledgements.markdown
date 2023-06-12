@@ -26,6 +26,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+## GDTMobSDK
+
+Copyright 2017 Tencent Inc. All Rights Reserved.
+
 ## UBiXMediationSDK
 
 Copyright (c) 2023 stefan.qi <nianshiguang@126.com>

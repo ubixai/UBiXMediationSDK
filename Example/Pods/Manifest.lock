@@ -5,10 +5,14 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - GDTMobSDK (4.14.30):
+    - GDTMobSDK/GDTMobSDK (= 4.14.30)
+  - GDTMobSDK/GDTMobSDK (4.14.30)
   - JADYun (2.2.8)
   - KSAdSDK (3.3.46)
   - UBiXMediationSDK (2.1.2.14):
     - BaiduMobAdSDK
+    - GDTMobSDK
     - JADYun
     - KSAdSDK (~> 3.3.36)
 
@@ -20,6 +24,7 @@ SPEC REPOS:
   trunk:
     - BaiduMobAdSDK
     - FBSnapshotTestCase
+    - GDTMobSDK
     - JADYun
     - KSAdSDK
 
@@ -30,9 +35,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   BaiduMobAdSDK: bb64abc1b5104134d4a0fcd2ff223e688c5aa372
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GDTMobSDK: 4cae52817d881c26f7a656fba439a0792d695933
   JADYun: 0a86fce79b18e299e65c00e6f637fd8494f4e672
   KSAdSDK: 7c446292799bc20da008fc807309068c6d7ab111
-  UBiXMediationSDK: c00cf8c30a1f78e8a4faebf75d386cddf7838aa0
+  UBiXMediationSDK: 1f92899b3966fe005bf60f664e3a8f019297491b
 
 PODFILE CHECKSUM: 41e1bfba7279239010b762b180ce1f30c2c24519
 

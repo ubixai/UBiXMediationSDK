@@ -27,6 +27,9 @@
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "dependencies": {
+    "GDTMobSDK": [
+
+    ],
     "KSAdSDK": [
       "~> 3.3.36"
     ],

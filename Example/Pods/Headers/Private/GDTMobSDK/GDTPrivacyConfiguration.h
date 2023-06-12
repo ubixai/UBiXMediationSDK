@@ -1,0 +1,1 @@
+../../../GDTMobSDK/lib/GDTPrivacyConfiguration.h
