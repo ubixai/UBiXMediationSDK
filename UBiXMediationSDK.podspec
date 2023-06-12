@@ -31,8 +31,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
 #  s.source_files = 'UBiXMediationSDK/Classes/**/*'
-  s.vendored_frameworks = ['UBiXMediationSDK/Classes/UbiXMediation.framework','UBiXMediationSDK/Classes/UbiXDaq.framework','UBiXMediationSDK/Classes/UbiXAdSDK.framework']
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64' }
+  s.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXMediation.framework','UBiXMediationSDK/SDK/UbiXDaq.framework','UBiXMediationSDK/SDK/UbiXAdSDK.framework']
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   
   # s.resource_bundles = {
