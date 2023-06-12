@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - UBiXMediationSDK (2.1.2.11)
+  - UBiXMediationSDK (2.1.2.13)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  UBiXMediationSDK: 18cde9d0a6d2000583569efceeb0ff453554bbc7
+  UBiXMediationSDK: bcfbf7057e2381b623a50d40408aac0eafd7db94
 
 PODFILE CHECKSUM: 41e1bfba7279239010b762b180ce1f30c2c24519
 
