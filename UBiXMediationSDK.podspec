@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.1.2.15'
+  s.version          = '2.1.2.18'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -41,9 +41,9 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'Ads-CN'
-  s.dependency 'GDTMobSDK'
-  s.dependency 'KSAdSDK', '~> 3.3.36'
-  s.dependency 'BaiduMobAdSDK'
-  s.dependency 'JADYun'
+#  s.dependency 'Ads-CN'
+#  s.dependency 'GDTMobSDK'
+#  s.dependency 'KSAdSDK', '~> 3.3.36'
+#  s.dependency 'BaiduMobAdSDK'
+#  s.dependency 'JADYun'
 end
