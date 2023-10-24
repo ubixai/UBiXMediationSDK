@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.2.1.02'
+  s.version          = '2.2.1.03'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -43,9 +43,10 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
   s.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck'
   s.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
-#  s.dependency 'Ads-CN'
-#  s.dependency 'GDTMobSDK'
-#  s.dependency 'KSAdSDK', '~> 3.3.36'
-#  s.dependency 'BaiduMobAdSDK'
-#  s.dependency 'JADYun'
+#  s.dependency 'Ads-Fusion-CN-Beta/BUAdSDK','5.6.0.5'
+#  s.dependency 'Ads-Fusion-CN-Beta/CSJMediation','5.6.0.5'
+#  s.dependency 'GDTMobSDK', '4.14.45'
+#  s.dependency 'KSAdSDK', '3.3.53'
+#  s.dependency 'BaiduMobAdSDK', '5.322'
+#  s.dependency 'JADYun', '2.4.6'
 end

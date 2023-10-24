@@ -22,7 +22,7 @@ pod 'UBiXMediationSDK'
 
 ## Author
 
-stefan.qi, nianshiguang@126.com
+stefan.qi, stefan.qi@ubixai.com
 
 ## License
 
