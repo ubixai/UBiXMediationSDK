@@ -3,7 +3,15 @@ use_frameworks!
 platform :ios, '10.0'
 
 target 'UBiXMediationSDK_Example' do
-  pod 'UBiXMediationSDK', :path => '../'
+  # pod 'UBiXMediationSDK', :path => '../'
+  pod 'UBiXMediationSDK', '~> 2.2.1.03'
+  # pod 'Ads-Fusion-CN-Beta/BUAdSDK','5.6.0.5'
+  # pod 'Ads-Fusion-CN-Beta/CSJMediation','5.6.0.5'
+  # pod 'GDTMobSDK', '4.14.45'
+  # pod 'KSAdSDK', '3.3.53'
+  # pod 'BaiduMobAdSDK', '5.322'
+  # pod 'JADYun', '2.4.6'
+
 
   target 'UBiXMediationSDK_Tests' do
     inherit! :search_paths

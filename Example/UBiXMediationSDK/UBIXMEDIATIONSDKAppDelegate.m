@@ -10,7 +10,9 @@
 #import <UbiXMediation/UbiXMediationSDK.h>
 #import <UbiXMediation/UbiXMediationSplash.h>
 #import <UbiXDaq/UbiXDaq.h>
+#import <UbiXAdSDK/UbiXAdSDK.h>
 #import "UBIXMEDIATIONSDKViewController.h"
+//#import <BUAdSDK/BUAdSDK.h>
 
 @interface AdWindow : UIWindow <UbiXMediationSplashDelegate>
 @property (nonatomic, strong)UbiXMediationSplash *splash;
@@ -130,6 +132,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSLog(@"N.O.W, v%@", UbiXMediationSDK.sdkVersion);
+    NSLog(@"UBIX, v%@", UBiXAdSDKManager.SDKVersion);
+//    NSLog(@"Pangle, v%@", BUAdSDKManager.SDKVersion);
     
     UBIXMEDIATIONSDKViewController *vc = [[UBIXMEDIATIONSDKViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
