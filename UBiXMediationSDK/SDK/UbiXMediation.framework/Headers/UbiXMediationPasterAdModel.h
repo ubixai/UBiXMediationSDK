@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 贴片广告图层
 @property (nonatomic, strong) UbiXMediationMediaView *pasterAdView;
 
-/// 信息流广告图层
+/// 贴片广告图层素材
 @property (nonatomic, strong) UbiXMediationMaterialData *pasterAdMaterialData;
 
 // 扩展参数

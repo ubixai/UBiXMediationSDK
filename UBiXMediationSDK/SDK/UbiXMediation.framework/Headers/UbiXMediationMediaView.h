@@ -48,15 +48,20 @@ typedef NS_ENUM(NSUInteger, UbiXMMediaPlayerStatus) {
 @protocol UbiXMCustomerVideoPlayerStatusDelegate <NSObject>
 
 /// 视频播放开始
-- (void)ubixm_customer_startPlayVideoView:(UbiXMediationPasterAdModel *)adModel;
+/// @param videoPlayerView <UbiXMediationCustomeVideoPlayerDelegate>
+- (void)ubixm_customer_startPlayVideoView:(UIView *)videoPlayerView;
 /// 视频播放暂停
-- (void)ubixm_customer_didPauseVideoView:(UbiXMediationPasterAdModel *)adModel;
+/// @param videoPlayerView <UbiXMediationCustomeVideoPlayerDelegate>
+- (void)ubixm_customer_didPauseVideoView:(UIView *)videoPlayerView;
 /// 视频播放恢复
-- (void)ubixm_customer_didResumeVideoView:(UbiXMediationPasterAdModel *)adModel;
+/// @param videoPlayerView <UbiXMediationCustomeVideoPlayerDelegate>
+- (void)ubixm_customer_didResumeVideoView:(UIView *)videoPlayerView;
 /// 视频播放结束
-- (void)ubixm_customer_didFinishVideoView:(UbiXMediationPasterAdModel *)adModel;
+/// @param videoPlayerView <UbiXMediationCustomeVideoPlayerDelegate>
+- (void)ubixm_customer_didFinishVideoView:(UIView *)videoPlayerView;
 /// 视频播放终止
-- (void)ubixm_customer_didBreakVideoView:(UbiXMediationPasterAdModel *)adModel;
+/// @param videoPlayerView <UbiXMediationCustomeVideoPlayerDelegate>
+- (void)ubixm_customer_didBreakVideoView:(UIView *)videoPlayerView error:(NSError *)error;
 
 @end
 

@@ -19,7 +19,7 @@ typedef NS_ENUM(int, UBiXUserGender) {
 
 @interface UBiXPrivacyConfig : NSObject
 /// 是否允许查询指定schema。(默认YES)
-@property (nonatomic, assign, getter = isCanQueryScheme) BOOL canQueryScheme;
+@property (nonatomic, assign, getter = isCanQueryScheme) BOOL canQueryScheme DEPRECATED_MSG_ATTRIBUTE("Disabled");
 /// 是否允许使用位置信息。(默认YES)
 @property (nonatomic, assign, getter = isCanUseLocation) BOOL canUseLocation;
 /// 是否允许使用IDFA。(默认YES)
@@ -44,7 +44,7 @@ typedef NS_ENUM(int, UBiXUserGender) {
 
 // 实例化
 + (instancetype)sharedInstance;
-+ (instancetype)config;
+//+ (instancetype)config; // 不再使用
 @end
 
 NS_ASSUME_NONNULL_END

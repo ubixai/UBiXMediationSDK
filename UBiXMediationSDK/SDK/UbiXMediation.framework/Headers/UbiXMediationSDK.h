@@ -45,6 +45,50 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/// 用户性别, 0: Unknown, 1: Male, 2: Female
+typedef NS_ENUM (int, UbixMUserInfoGender) {
+    UbiXMUserInfoGender_Unknown                  = 0,
+    UbiXMUserInfoGender_Male                     = 1,
+    UbiXMUserInfoGender_Female                   = 2,
+};
+/// 付费用户, 0: 未知；1: 否；2: 是
+typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
+    UbiXMUserInfoSubscribe_Unknown              = 0,
+    UbiXMUserInfoSubscribe_No                   = 1,
+    UbiXMUserInfoSubscribe_Yes                  = 2,
+};
+
+/// 流量分组信息
+@interface UbiXMUserInfoConfig : NSObject
+/// 用户在媒体上注册的 ID
+@property (nonatomic, copy) NSString *userId;
+/// 渠道，字符的规则：[A-Za-z0-9_]
+@property (nonatomic, copy) NSString *channel;
+/// 子渠道， 字符的规则：[A-Za-z0-9_]
+@property (nonatomic, copy) NSString *subChannel;
+/// 用户年龄，用户的年龄段。
+/// [1-18):1;[18-24):18;[24-31):24;[31- 41):31;[41-51):41;50 以上传 50
+@property (nonatomic, assign) int age;
+/// 用户性别
+@property (nonatomic, assign) UbixMUserInfoGender gender;
+/// 付费用户, 0: 未知；1: 否；2: 是
+@property (nonatomic, assign) UbixMUserInfoSubscribe isSubscriber;
+/// 流量分组ID或者标签ID
+@property (nonatomic, copy) NSString *pubSegmentId;
+/// 自定义，
+@property (nonatomic, strong) NSDictionary<NSString *, NSString *> *customUserInfo;
+
+@end
+
+/// 聚合SDK 配置项
+@interface UbiXMAdConfig: NSObject
+/// 隐私相关信息配置
+@property (nonatomic, strong) UbiXMConcealConfig *concealConfig;
+/// 流量分组信息配置
+@property (nonatomic, strong) UbiXMUserInfoConfig *userInfoConfig;
+
+@end
+
 
 @interface UbiXMediationSDK : NSObject
 
@@ -59,7 +103,14 @@ NS_ASSUME_NONNULL_BEGIN
  @param appId 聚合appId
  @param concealConfig 隐私相关的获取配置
  */
-+ (void)initializeWithAppId:(NSString *)appId config:(UbiXMConcealConfig *)concealConfig;
++ (void)initializeWithAppId:(NSString *)appId config:(UbiXMConcealConfig *)concealConfig DEPRECATED_ATTRIBUTE;
+
+/**
+ 初始化方法
+ @param appId 聚合appId
+ @param adConfig 聚合sdk配置
+ */
++ (void)initializeWithAppId:(NSString *)appId adConfig:(UbiXMAdConfig *)adConfig;
 
 /**
  sdk版本 如: @"2.0.0"

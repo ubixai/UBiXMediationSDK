@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "UBiXAdSDKDefines.h"
+#import "UBiXNativeAdData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 广告返回对象，需被强引用
  */
-@class UBiXNativeAdData;
+//@class UBiXNativeAdData;
 @interface UBiXNativeAdObject : NSObject
 /// 广告素材数据
 @property (nonatomic, strong, readonly) UBiXNativeAdData *adData;

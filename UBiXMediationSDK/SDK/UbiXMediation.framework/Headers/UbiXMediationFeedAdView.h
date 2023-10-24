@@ -35,16 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
 // 信息流广告点击回调
 - (void)mediationFeedAdViewDidClick:(UbiXMedationFeedAdModel *)feedAdModel;
 
-// 信息流广告移除回调
+// 信息流广告关闭回调
 - (void)mediationFeedAdViewDidClosed:(UbiXMedationFeedAdModel *)feedAdModel;
 
-// 信息流广告移除回调
+// 信息流广告开始播放回调
 - (void)mediationFeedAdViewDidStartPlay:(UbiXMedationFeedAdModel *)feedAdModel;
 
-// 信息流广告移除回调
+// 信息流广告结束播放回调
 - (void)mediationFeedAdViewDidFinishPlay:(UbiXMedationFeedAdModel *)feedAdModel;
 
-// 信息流广告移除回调
+// 信息流广告播放出错
 - (void)mediationFeedAdView:(UbiXMedationFeedAdModel *)feedAdModel didPlayError:(NSError *)error;
 
 // 信息流广告消失

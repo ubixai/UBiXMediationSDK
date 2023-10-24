@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <UbiXMediation/UbiXMediationObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol UbiXMediationSplashDelegate;
@@ -16,13 +17,10 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
     UbiXMSkipButtonShowTypeCircle,  // 圆环样式
 };
 
-@interface UbiXMediationSplash : NSObject
+@interface UbiXMediationSplash : UbiXMediationObject
 
 // 开屏广告的回调代理
 @property (nonatomic, weak)id<UbiXMediationSplashDelegate> delegate;
-
-// 广告位Id
-@property (nonatomic, copy)NSString *slotId;
 
 // 底部视图, 如有需要确定宽高, 开发者自定义（可选）
 @property (nonatomic, strong)UIView *bottomView;
@@ -35,22 +33,17 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
 
-
-/// 根据slotModel信息初始化开屏对象
-- (instancetype) initWithSlotId:(NSString *)slotId;
-
 // load前需要设置好所有参数
 - (void)loadAd;
 
 - (void)showAd:(UIWindow *)window;
+/// 销毁广告
+- (void)destroyAd;
 
 - (BOOL)isReady;
 
 /// 广告是否有效
 - (BOOL)isAvaliable;
-
-/// 移除广告
-- (void)removeAd;
 
 /**
  返回广告的eCPM，单位：分

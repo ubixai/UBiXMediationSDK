@@ -9,6 +9,7 @@
 #import <UbiXMediation/UbiXMediationPasterAdModel.h>
 #import <UbiXMediation/UbiXMediationMaterialData.h>
 #import <UbiXMediation/UbiXMediationMediaView.h>
+#import <UbiXMediation/UbiXMediationObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,9 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface UbiXMediationPaster : NSObject
-
-@property (nonatomic, copy, readonly)NSString *slotId;
+@interface UbiXMediationPaster : UbiXMediationObject
 
 @property (nonatomic, weak)id<UbiXMediationPasterDelegate> delegate;
 
@@ -40,16 +39,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)NSArray *adViewArray;
 
 /**
- 根据slotId初始化PasterView
- */
-- (instancetype)initWithSlotId:(NSString *)slotId;
-
-/**
  根据广告尺寸加载广告
  load前确定好rootViewController, 用于present落地页
  @param count 一次取的广告数量，取值范围为 1-10
  */
 - (void)loadAdWithAdSize:(CGSize)adSize Count:(NSInteger)count;
+
+- (void)destroyAd;
 
 /** 广告是否可用 */
 - (BOOL)isReady;

@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UbiXMediation/UbiXMediationFeedAdView.h>
 #import <UbiXMediation/UbiXMediationMaterialData.h>
+#import <UbiXMediation/UBiXMFeedbackIconView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,6 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 绑定点击事件图层
 - (void)setContainer:(UIView *)containerView clickableViews:(NSArray *)clickableViews closableViews:(NSArray *)closableViews;
+
+/// 获取用户反馈按钮View，方便媒体在自渲染模式下支持用户反馈
+- (UBiXMFeedbackIconView *)getFeedbackView;
 
 @end
 

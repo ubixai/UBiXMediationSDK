@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UbiXMediation/UbiXMediationObject.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,20 +44,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface UbiXMediationRewardedVideo : NSObject
+@interface UbiXMediationRewardedVideo : UbiXMediationObject
 /**
  接收回调
  */
 @property (nonatomic, weak) id<UbiXMediationRewardedVideoDelegate> delegate;
-/**
- 广告位id
- */
-@property (nonatomic, copy, readonly) NSString *slotId;
-/**
- 初始化
- @param slotId 广告位id
- */
-- (instancetype)initWithSlotId:(NSString *)slotId;
 
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;

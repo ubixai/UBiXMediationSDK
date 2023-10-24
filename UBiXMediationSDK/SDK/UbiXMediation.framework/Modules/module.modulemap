@@ -1,6 +1,6 @@
 framework module UbiXMediation {
   umbrella header "UbiXMediation.h"
-
   export *
+
   module * { export * }
 }

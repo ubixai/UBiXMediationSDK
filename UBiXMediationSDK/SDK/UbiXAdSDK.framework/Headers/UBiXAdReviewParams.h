@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UBiXAdReviewParams : NSObject
 /// 是否是视频广告
-@property (nonatomic, assign, getter = isVideoAd) BOOL videoAd;
+@property (nonatomic, assign) BOOL isVideoAd;
 /// 素材地址
 @property (nonatomic, strong) NSArray <NSString *> *mediaUrls;
 @end

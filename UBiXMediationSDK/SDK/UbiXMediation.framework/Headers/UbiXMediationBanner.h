@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UbiXMediation/UbixMediationAdView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -32,9 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface UbiXMediationBanner : UIView
-
-@property (nonatomic, copy, readonly)NSString *slotId;
+@interface UbiXMediationBanner : UbiXMediationAdView
 
 @property (nonatomic, weak)id<UbiXMediationBannerDelegate> delegate;
 
@@ -42,11 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
-
-/**
- 根据slotId初始化bannerView
- */
-- (instancetype)initWithSlotId:(NSString *)slotId;
 
 /**
  根据广告尺寸加载广告
@@ -65,6 +59,9 @@ NS_ASSUME_NONNULL_BEGIN
  @return 成功返回一个大于等于0的值，-1表示无权限或后台出现异常
  */
 - (NSInteger)eCPM;
+
+// 销毁广告
+- (void)destory;
 
 @end
 

@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 获取bidding token
  * 需要在主线程获取，否则获取失败
  */
-- (NSString *)getBiddingToken;
+- (nullable NSString *)getBiddingToken;
 
 /**
  * 加载bidding广告
