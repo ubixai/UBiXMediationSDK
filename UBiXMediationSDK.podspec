@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.2.1.03'
+  s.version          = '2.2.1.0401'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/honourcoder/UBiXMediationSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
 #  s.source_files = 'UBiXMediationSDK/Classes/**/*'
   s.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXMediation.framework','UBiXMediationSDK/SDK/UbiXDaq.framework','UBiXMediationSDK/SDK/UbiXAdSDK.framework']
@@ -45,6 +45,7 @@ TODO: Add long description of the pod here.
   s.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
 #  s.dependency 'Ads-Fusion-CN-Beta/BUAdSDK','5.6.0.5'
 #  s.dependency 'Ads-Fusion-CN-Beta/CSJMediation','5.6.0.5'
+#  s.dependency pod 'Ads-CN', '5.6.0.7'
 #  s.dependency 'GDTMobSDK', '4.14.45'
 #  s.dependency 'KSAdSDK', '3.3.53'
 #  s.dependency 'BaiduMobAdSDK', '5.322'

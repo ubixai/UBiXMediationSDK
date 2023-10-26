@@ -12,7 +12,7 @@
 #import <UbiXDaq/UbiXDaq.h>
 #import <UbiXAdSDK/UbiXAdSDK.h>
 #import "UBIXMEDIATIONSDKViewController.h"
-//#import <BUAdSDK/BUAdSDK.h>
+#import <BUAdSDK/BUAdSDK.h>
 
 @interface AdWindow : UIWindow <UbiXMediationSplashDelegate>
 @property (nonatomic, strong)UbiXMediationSplash *splash;
@@ -32,7 +32,7 @@
 }
 
 - (void)requestSplash {
-    self.splash = [[UbiXMediationSplash alloc] initWithSlotId:@"14072156"];
+    self.splash = [[UbiXMediationSplash alloc] initWithSlotId:@"14072154"];
     self.splash.delegate = self;
     self.splash.rootViewController = self.rootViewController; // 此时还没有rootVC
     UILabel *bottom = [[UILabel alloc] init];
@@ -54,7 +54,7 @@
 }
 // 开屏广告加载成功
 - (void)mediationSplashDidLoad:(UbiXMediationSplash *)splash{
-//    DEMOLOG(@"开屏广告加载成功 %s", __func__);
+    NSLog(@"开屏广告加载成功 %s", __func__);
 //    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     if ([self.splash isReady]) {
         [self.splash showAd:self];
@@ -135,7 +135,7 @@
     
     NSLog(@"N.O.W, v%@", UbiXMediationSDK.sdkVersion);
     NSLog(@"UBIX, v%@", UBiXAdSDKManager.SDKVersion);
-//    NSLog(@"Pangle, v%@", BUAdSDKManager.SDKVersion);
+    NSLog(@"Pangle, v%@", BUAdSDKManager.SDKVersion);
     
     UBIXMEDIATIONSDKViewController *vc = [[UBIXMEDIATIONSDKViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -152,6 +152,12 @@
     _window.rootViewController = navi;
     
     return YES;
+}
+
+- (void)adClose {
+    [_window makeKeyAndVisible];
+    
+    _adWindow = nil;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
