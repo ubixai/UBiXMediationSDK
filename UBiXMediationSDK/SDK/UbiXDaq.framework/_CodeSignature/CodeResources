@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/UbiXDaqReporter.h</key>
 		<data>
-		PqqzANE2Za1Q4WCbt+Ja4x+LXKk=
+		pHwUrTYfRLb+iuUoHUl6BSTs+70=
 		</data>
 		<key>Headers/UbiXDatabase.h</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r+WeB8LuIvVmbZKoxDSmyarFr6U=
+		zAIeX5ZEWtUTyoW7L3cBXBxS4F4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -259,11 +259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PqqzANE2Za1Q4WCbt+Ja4x+LXKk=
+			pHwUrTYfRLb+iuUoHUl6BSTs+70=
 			</data>
 			<key>hash2</key>
 			<data>
-			msNPpA4U+OIUmKQNh5csVqacP1L25BzPwOpyfr65hMs=
+			QfsC7dUCmf+nbdYPSLx7EBT77rcpudhEpWDIJL3axFs=
 			</data>
 		</dict>
 		<key>Headers/UbiXDatabase.h</key>
