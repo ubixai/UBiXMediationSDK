@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.2.1.0402'
+  s.version          = '2.3.0.1.01'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.

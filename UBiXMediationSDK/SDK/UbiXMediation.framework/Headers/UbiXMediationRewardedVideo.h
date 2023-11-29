@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 激励视频广告展示成功回调
 - (void)mediationRewardedVideoDidShow:(UbiXMediationRewardedVideo *)rewardedVideo;
 
+// 激励视频广告播放开始回调
+- (void)mediationRewardedVideoDidStarted:(UbiXMediationRewardedVideo *)rewardedVideo;
+
 // 激励视频广告展示失败回调
 - (void)mediationRewardedVideoDidFailToShow:(UbiXMediationRewardedVideo *)rewardedVideo error:(NSError *)error;
 

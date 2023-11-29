@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isCanReadIDFA;
 
 /**  是否允许个性化广告推荐 默认允许 0 拒绝，1 允许  **/
-@property (nonatomic, assign) BOOL isLimitPersonalAds;
+@property (nonatomic, assign) BOOL isLimitPersonalAds DEPRECATED_MSG_ATTRIBUTE("即将废弃，请使用[UbiXMediationSDK setLimitPersonalAds:]");
 
 /** 允许用户传递idfa，如果用户传递了此值，则聚合SDK不再进行该值的获取 */
 @property (nonatomic, copy) NSString *idfa;
@@ -93,6 +93,11 @@ typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
 @interface UbiXMediationSDK : NSObject
 
 /**
+ * 可选, 是否限制个性化推荐:  NO-不限制、YES-限制，默认为NO。官方维护版本中只适用于CSJ，Ks、百度、GDT 、UbiX
+ */
+@property (class, nonatomic, assign) BOOL limitPersonalAds;
+
+/**
  初始化方法
  @param appId 聚合appId
  */
@@ -103,7 +108,7 @@ typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
  @param appId 聚合appId
  @param concealConfig 隐私相关的获取配置
  */
-+ (void)initializeWithAppId:(NSString *)appId config:(UbiXMConcealConfig *)concealConfig DEPRECATED_ATTRIBUTE;
++ (void)initializeWithAppId:(NSString *)appId config:(UbiXMConcealConfig *)concealConfig DEPRECATED_MSG_ATTRIBUTE("接口即将废弃，请使用 + (void)initializeWithAppId:(NSString *)appId adConfig:(UbiXMAdConfig *)adConfig");
 
 /**
  初始化方法

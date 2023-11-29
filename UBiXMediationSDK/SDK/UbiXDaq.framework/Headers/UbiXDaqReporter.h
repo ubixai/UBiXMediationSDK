@@ -42,6 +42,14 @@ extern NSString *const kAdAuditType;
 extern NSString *const kCtrConfig;
 extern NSString *const kIsTriggerCtr;
 extern NSString *const kExtra;
+extern NSString *const kUbixmUsr_Uid;
+extern NSString *const kUbixmUsr_Channel;
+extern NSString *const kUbixmUsr_SubChannel;
+extern NSString *const kUbixmUsr_Age;
+extern NSString *const kUbixmUsr_Gender;
+extern NSString *const kUbixmUsr_IsSubscriber;
+extern NSString *const kUbixmUsr_PubSegmentId;
+extern NSString *const kUbixmUsr_Ext;
 
 @interface UbiXDaqEventParam : NSObject
 
@@ -51,6 +59,10 @@ extern NSString *const kExtra;
 
 /** daq不再主动获取idfa，由调用者上传idfa */
 @property (nonatomic, copy) NSString *idfa;
+/** daq不再主动获取idfv，由调用者上传idfv */
+@property (nonatomic, copy) NSString *idfv;
+/** 用户信息 字典 */
+@property (nonatomic, strong) NSDictionary *userInfoDic;
 /** 埋点上报的环境变量 */
 @property (nonatomic, assign) int32_t env;
 
