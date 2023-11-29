@@ -7,6 +7,7 @@
 //
 
 #import "UBIXMEDIATIONSDKViewController.h"
+#import <UbiXMediation/UbiXMediation.h>
 
 @interface UBIXMEDIATIONSDKViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor lightGrayColor];
+    self.title = [NSString stringWithFormat:@"N.O.W,V%@", [UbiXMediationSDK sdkVersion]];
 }
 
 - (void)didReceiveMemoryWarning

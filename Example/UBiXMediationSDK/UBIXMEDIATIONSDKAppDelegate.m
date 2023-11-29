@@ -22,10 +22,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.isClick = NO;
-        UbiXMConcealConfig *config = [[UbiXMConcealConfig alloc] init];
-        config.isCanReadIDFA = NO;
-        config.isOpenLog = YES;
-        [UbiXMediationSDK initializeWithAppId:@"138820189206" config:config];
+        
 //        [self requestSplash];
     }
     return self;
@@ -134,8 +131,11 @@
     // Override point for customization after application launch.
     
     NSLog(@"N.O.W, v%@", UbiXMediationSDK.sdkVersion);
+    NSLog(@"daq, v%@", UBIX_DAQ_VERSION);
     NSLog(@"UBIX, v%@", UBiXAdSDKManager.SDKVersion);
     NSLog(@"Pangle, v%@", BUAdSDKManager.SDKVersion);
+    
+    [self setupUBiXMediationSDK];
     
     UBIXMEDIATIONSDKViewController *vc = [[UBIXMEDIATIONSDKViewController alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
@@ -152,6 +152,22 @@
     _window.rootViewController = navi;
     
     return YES;
+}
+
+- (void)setupUBiXMediationSDK {
+    // sdk 配置
+    UbiXMAdConfig *adConfig = [[UbiXMAdConfig alloc] init];
+    // 隐私配置
+    UbiXMConcealConfig *concealConfig = [[UbiXMConcealConfig alloc] init];
+    concealConfig.isCanReadIDFA = NO;
+    concealConfig.isOpenLog = YES;
+    adConfig.concealConfig = concealConfig;
+    // 用户配置
+    UbiXMUserInfoConfig *usrConfig = [[UbiXMUserInfoConfig alloc] init];
+    usrConfig.userId = @"Your_user_id";
+    adConfig.userInfoConfig = usrConfig;
+    // 初始化
+    [UbiXMediationSDK initializeWithAppId:@"138820189206" adConfig:adConfig];
 }
 
 - (void)adClose {
