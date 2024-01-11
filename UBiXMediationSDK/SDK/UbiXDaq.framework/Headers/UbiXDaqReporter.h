@@ -42,6 +42,7 @@ extern NSString *const kAdAuditType;
 extern NSString *const kCtrConfig;
 extern NSString *const kIsTriggerCtr;
 extern NSString *const kExtra;
+extern NSString *const kNetStatusCode;
 extern NSString *const kUbixmUsr_Uid;
 extern NSString *const kUbixmUsr_Channel;
 extern NSString *const kUbixmUsr_SubChannel;

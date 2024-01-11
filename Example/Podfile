@@ -4,13 +4,13 @@ platform :ios, '10.0'
 
 target 'UBiXMediationSDK_Example' do
 #   pod 'UBiXMediationSDK', :path => '../'
-  pod 'UBiXMediationSDK', '2.3.0.0105'
+  pod 'UBiXMediationSDK', '2.3.1.01'
 #  pod 'Ads-CN', '5.6.0.7'
-  # pod 'Ads-Fusion-CN-Beta/BUAdSDK','5.6.0.5'
-  # pod 'Ads-Fusion-CN-Beta/CSJMediation','5.6.0.5'
+#   pod 'Ads-Fusion-CN-Beta/BUAdSDK','5.8.0.8'
+#   pod 'Ads-Fusion-CN-Beta/CSJMediation','5.8.0.8'
 #   pod 'GDTMobSDK', '4.14.45'
-#   pod 'KSAdSDK', '3.3.53'
-#   pod 'BaiduMobAdSDK', '5.325'
+#   pod 'KSAdSDK', '3.3.55'
+#   pod 'BaiduMobAdSDK', '5.3311'
 #   pod 'JADYun', '2.4.6'
 
 

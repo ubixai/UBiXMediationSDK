@@ -41,6 +41,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak)id<UbiXMediationInterstitialDelegate> delegate;
 
+// 点击后关闭插屏广告，默认不关闭
+@property (nonatomic, assign)BOOL closeAfterClick;;
+
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
 
