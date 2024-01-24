@@ -26,6 +26,8 @@ typedef NS_ENUM(int, UBiXUserGender) {
 @property (nonatomic, assign, getter = isCanUseDeviceId) BOOL canUseDeviceId;
 /// 限制个性化广告。(默认NO)
 @property (nonatomic, assign, getter = isLimitPersonalizedAds) BOOL limitPersonalizedAds;
+/// 限制程序化推荐广告。(默认NO)
+@property (nonatomic, assign, getter = isLimitProgrammaticRecommend) BOOL limitProgrammaticRecommend;
 
 // 当location不允许获取时，可设置自定义的值
 @property (nonatomic, assign) double customLatitude;  // 纬度

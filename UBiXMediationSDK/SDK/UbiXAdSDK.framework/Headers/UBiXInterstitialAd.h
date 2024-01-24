@@ -89,6 +89,20 @@ NS_ASSUME_NONNULL_BEGIN
  * 获取广告价格，单位(分)
  */
 - (NSInteger)eCPM;
+
+// ------ bidding ------ //
+/**
+ * 获取bidding token
+ * 需要在主线程获取，否则获取失败
+ */
+- (nullable NSString *)getBiddingToken;
+
+/**
+ * 加载bidding广告
+ * @param adm 服务器返回的json字符串 @"{\"messge\":\"Cia...\",\"request_id\":\3af4..."\",\"auction_price\":\"320\"}"
+ */
+- (void)loadBiddingAd:(NSString *)adm;
+// --------------------- //
 @end
 
 NS_ASSUME_NONNULL_END
