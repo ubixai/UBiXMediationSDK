@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *slotId;
 
+// 展示落地页的controller, 如果不传默认使用keyWindow.rootVC
+@property (nonatomic, weak)UIViewController *rootViewController;
+
 /**
  根据slotId初始化 adView
  */

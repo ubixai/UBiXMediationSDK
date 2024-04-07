@@ -30,9 +30,6 @@ typedef enum {
 // 信息流渲染方式
 @property (nonatomic, assign)UbiXMFeedRenderType renderType;
 
-// 展示落地页的controller, 如果不传默认使用keyWindow.rootVC
-@property (nonatomic, weak)UIViewController *rootViewController;
-
 // load前需要设置好所有参数
 - (void)loadAdWithAdSize:(CGSize)adSize;
 // 销毁广告

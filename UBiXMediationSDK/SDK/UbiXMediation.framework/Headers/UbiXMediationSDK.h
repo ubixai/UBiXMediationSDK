@@ -122,6 +122,12 @@ typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
  */
 + (NSString *)sdkVersion;
 
+/**
+ 初始化方法
+ @param filePathBundle 预配置文件的bundle
+ */
++ (void)setPresetConfigPathBundle:(NSBundle *)filePathBundle;
+
 @end
 
 NS_ASSUME_NONNULL_END

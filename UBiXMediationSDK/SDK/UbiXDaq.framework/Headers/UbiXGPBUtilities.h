@@ -302,7 +302,7 @@ void UbiXGPBSetMessageDoubleField(UbiXGPBMessage *self, UbiXGPBFieldDescriptor *
 
 /**
  * Gets the given enum field of a message. For proto3, if the value isn't a
- * member of the enum, @c kGPBUnrecognizedEnumeratorValue will be returned.
+ * member of the enum, @c kUbiXGPBUnrecognizedEnumeratorValue will be returned.
  * UbiXGPBGetMessageRawEnumField will bypass the check and return whatever value
  * was set.
  *
@@ -435,7 +435,7 @@ CF_EXTERN_C_END
 //%UbiX_GPB_ACCESSOR_SINGLE(Double, double, )
 //%/**
 //% * Gets the given enum field of a message. For proto3, if the value isn't a
-//% * member of the enum, @c kGPBUnrecognizedEnumeratorValue will be returned.
+//% * member of the enum, @c kUbiXGPBUnrecognizedEnumeratorValue will be returned.
 //% * UbiXGPBGetMessageRawEnumField will bypass the check and return whatever value
 //% * was set.
 //% *

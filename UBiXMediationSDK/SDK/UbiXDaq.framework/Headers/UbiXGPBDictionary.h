@@ -773,7 +773,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
                                   capacity:(NSUInteger)numItems;
 
-// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 // is not a valid enumerator as defined by validationFunc. If the actual value is
 // desired, use "raw" version of the method.
 
@@ -1694,7 +1694,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
                                   capacity:(NSUInteger)numItems;
 
-// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 // is not a valid enumerator as defined by validationFunc. If the actual value is
 // desired, use "raw" version of the method.
 
@@ -2615,7 +2615,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
                                   capacity:(NSUInteger)numItems;
 
-// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 // is not a valid enumerator as defined by validationFunc. If the actual value is
 // desired, use "raw" version of the method.
 
@@ -3536,7 +3536,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
                                   capacity:(NSUInteger)numItems;
 
-// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 // is not a valid enumerator as defined by validationFunc. If the actual value is
 // desired, use "raw" version of the method.
 
@@ -4457,7 +4457,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
                                   capacity:(NSUInteger)numItems;
 
-// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 // is not a valid enumerator as defined by validationFunc. If the actual value is
 // desired, use "raw" version of the method.
 
@@ -5378,7 +5378,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
                                   capacity:(NSUInteger)numItems;
 
-// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 // is not a valid enumerator as defined by validationFunc. If the actual value is
 // desired, use "raw" version of the method.
 
@@ -5664,7 +5664,7 @@ NS_ASSUME_NONNULL_END
 //%- (instancetype)initWithValidationFunction:(nullable UbiXGPBEnumValidationFunc)func
 //%                                  capacity:(NSUInteger)numItems;
 //%
-//%// These will return kGPBUnrecognizedEnumeratorValue if the value for the key
+//%// These will return kUbiXGPBUnrecognizedEnumeratorValue if the value for the key
 //%// is not a valid enumerator as defined by validationFunc. If the actual value is
 //%// desired, use "raw" version of the method.
 //%

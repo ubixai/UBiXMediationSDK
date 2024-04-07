@@ -11,10 +11,9 @@
 #import "UbiXReachability.h"
 #import "UbiXDB.h"
 #import "UbiXAdBase.h"
-#import "UbiXDaqRecord.h"
-#import "UbiXDaqReporter.h"
 
-#define UBIX_DAQ_VERSION @"2.2.7"
+
+#define UBIX_DAQ_VERSION @"2.3.1"
 
 //! Project version number for UbiXDaq.
 FOUNDATION_EXPORT double UbiXDaqVersionNumber;

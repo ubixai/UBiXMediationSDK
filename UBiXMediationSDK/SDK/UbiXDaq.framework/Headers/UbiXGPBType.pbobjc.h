@@ -48,7 +48,7 @@ typedef UbiX_GPB_ENUM(UbiXGPBSyntax) {
    * by this enum. The message will also have C functions to get/set the rawValue
    * of the field.
    **/
-  UbiXGPBSyntax_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
+  UbiXGPBSyntax_GPBUnrecognizedEnumeratorValue = kUbiXGPBUnrecognizedEnumeratorValue,
   /** Syntax `proto2`. */
   UbiXGPBSyntax_SyntaxProto2 = 0,
 
@@ -73,7 +73,7 @@ typedef UbiX_GPB_ENUM(UbiXGPBField_Kind) {
    * by this enum. The message will also have C functions to get/set the rawValue
    * of the field.
    **/
-  UbiXGPBField_Kind_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
+  UbiXGPBField_Kind_GPBUnrecognizedEnumeratorValue = kUbiXGPBUnrecognizedEnumeratorValue,
   /** Field type unknown. */
   UbiXGPBField_Kind_TypeUnknown = 0,
 
@@ -149,7 +149,7 @@ typedef UbiX_GPB_ENUM(UbiXGPBField_Cardinality) {
    * by this enum. The message will also have C functions to get/set the rawValue
    * of the field.
    **/
-  UbiXGPBField_Cardinality_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
+  UbiXGPBField_Cardinality_GPBUnrecognizedEnumeratorValue = kUbiXGPBUnrecognizedEnumeratorValue,
   /** For fields with unknown cardinality. */
   UbiXGPBField_Cardinality_CardinalityUnknown = 0,
 

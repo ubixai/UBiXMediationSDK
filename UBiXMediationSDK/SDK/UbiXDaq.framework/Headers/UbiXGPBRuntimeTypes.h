@@ -51,7 +51,7 @@ typedef UbiXGPBEnumDescriptor *(*UbiXGPBEnumDescriptorFunc)(void);
  * compile time.
  * */
 enum {
-  kGPBUnrecognizedEnumeratorValue = (int32_t)0xFBADBEEF,
+  kUbiXGPBUnrecognizedEnumeratorValue = (int32_t)0xFBADBEEF,
 };
 
 /**

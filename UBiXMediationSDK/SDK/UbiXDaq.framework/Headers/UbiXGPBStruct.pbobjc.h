@@ -51,7 +51,7 @@ typedef UbiX_GPB_ENUM(UbiXGPBNullValue) {
    * by this enum. The message will also have C functions to get/set the rawValue
    * of the field.
    **/
-  UbiXGPBNullValue_GPBUnrecognizedEnumeratorValue = kGPBUnrecognizedEnumeratorValue,
+  UbiXGPBNullValue_GPBUnrecognizedEnumeratorValue = kUbiXGPBUnrecognizedEnumeratorValue,
   /** Null value. */
   UbiXGPBNullValue_NullValue = 0,
 };

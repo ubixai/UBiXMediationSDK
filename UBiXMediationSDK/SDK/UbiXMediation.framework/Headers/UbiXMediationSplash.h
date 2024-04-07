@@ -51,6 +51,12 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
  @return 成功返回一个大于等于0的值，-1表示无权限或后台出现异常
  */
 - (NSInteger)eCPM;
+/**
+ * 在Deleggate  中获取生成的 token
+ */
+- (void)buildBiddingToken;
+
+- (void)loadAdWithAdm:(NSString *)adm;
 
 @end
 
@@ -58,6 +64,12 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 @protocol UbiXMediationSplashDelegate <NSObject>
 
 @optional
+// 开屏广告token成功
+- (void)mediationSplash:(UbiXMediationSplash *)splash tokenSucc:(NSString *)token;
+
+// 开屏广告token失败
+- (void)mediationSplash:(UbiXMediationSplash *)splash tokenFailed:(NSError *)error;
+
 // 开屏广告加载成功
 - (void)mediationSplashDidLoad:(UbiXMediationSplash *)splash;
 

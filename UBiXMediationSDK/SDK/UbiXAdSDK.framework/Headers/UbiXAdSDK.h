@@ -17,6 +17,7 @@
 #import <UbiXAdSDK/UBiXInterstitialAd.h>
 #import <UbiXAdSDK/UBiXRewardedVideoAd.h>
 #import <UbiXAdSDK/UBiXBannerAdView.h>
+#import <UbiXAdSDK/UBiXIconAdView.h>
 #import <UbiXAdSDK/UBiXPrivacyConfig.h>
 #import <UbiXAdSDK/UBiXAdReviewParams.h>
 #import <UbiXAdSDK/UBiXLogger.h>
@@ -32,6 +33,7 @@
 #import "UBiXInterstitialAd.h"
 #import "UBiXRewardedVideoAd.h"
 #import "UBiXBannerAdView.h"
+#import "UBiXIconAdView.h"
 #import "UBiXPrivacyConfig.h"
 #import "UBiXAdReviewParams.h"
 #import "UBiXLogger.h"

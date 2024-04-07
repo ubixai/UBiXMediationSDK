@@ -37,8 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak)id<UbiXMediationBannerDelegate> delegate;
 
-@property (nonatomic, weak) UIViewController *rootViewController;
-
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
 
