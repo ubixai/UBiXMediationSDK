@@ -13,6 +13,7 @@
 #import <UbiXAdSDK/UbiXAdSDK.h>
 #import "UBIXMEDIATIONSDKViewController.h"
 #import <BUAdSDK/BUAdSDK.h>
+#import "MYAdsConfiguration.h"
 
 @interface AdWindow : UIWindow <UbiXMediationSplashDelegate>
 @property (nonatomic, strong)UbiXMediationSplash *splash;
@@ -31,7 +32,7 @@
 - (void)requestSplash {
     self.splash = [[UbiXMediationSplash alloc] initWithSlotId:@"14072154"];
     self.splash.delegate = self;
-    self.splash.rootViewController = self.rootViewController; // 此时还没有rootVC
+//    self.splash.rootViewController = self.rootViewController; // 此时还没有rootVC
     UILabel *bottom = [[UILabel alloc] init];
     bottom.backgroundColor = [UIColor orangeColor];
     bottom.text = @"开发者自定义view";
@@ -60,7 +61,7 @@
 
 // 开屏广告展示成功
 - (void)mediationSplashDidShow:(UbiXMediationSplash *)splash{
-    NSLog(@"开屏广告展示成功 %s", __func__);
+    NSLog(@"开屏广告展示成功 %s, splash.rootVC %@", __func__, splash.rootViewController);
     self.backgroundColor = [UIColor clearColor];
     UBIXMEDIATIONSDKAppDelegate *app = [[UIApplication sharedApplication] delegate];
     if ([app respondsToSelector:@selector(adShow)]) {
@@ -134,6 +135,7 @@
     NSLog(@"daq, v%@", UBIX_DAQ_VERSION);
     NSLog(@"UBIX, v%@", UBiXAdSDKManager.SDKVersion);
     NSLog(@"Pangle, v%@", BUAdSDKManager.SDKVersion);
+    NSLog(@"MY, v%@", [MYAdsConfiguration shareInstance].sdkVersion);
     
     [self setupUBiXMediationSDK];
     
@@ -159,7 +161,7 @@
     UbiXMAdConfig *adConfig = [[UbiXMAdConfig alloc] init];
     // 隐私配置
     UbiXMConcealConfig *concealConfig = [[UbiXMConcealConfig alloc] init];
-    concealConfig.isCanReadIDFA = NO;
+    concealConfig.isCanReadIDFA = YES;
     concealConfig.isOpenLog = YES;
     adConfig.concealConfig = concealConfig;
     // 用户配置
