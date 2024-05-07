@@ -35,6 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 获取用户反馈按钮View，方便媒体在自渲染模式下支持用户反馈
 - (UBiXMFeedbackIconView *)getFeedbackView;
 
+- (void)unregistViews;
+
 @end
 
 NS_ASSUME_NONNULL_END

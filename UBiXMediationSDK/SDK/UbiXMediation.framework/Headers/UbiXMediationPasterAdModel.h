@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
 
+- (void)unregistViews;
+
 
 @end
 
