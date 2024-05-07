@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.4.1.0201'
+  s.version          = '2.4.1.03'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
 #  s.source_files = 'UBiXMediationSDK/Classes/**/*'
-  s.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXMediation.framework','UBiXMediationSDK/SDK/UbiXDaq.framework','UBiXMediationSDK/SDK/UbiXAdSDK.framework']
+  s.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXMediation.framework']
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 #  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   
@@ -50,4 +50,20 @@ TODO: Add long description of the pod here.
 #  s.dependency 'KSAdSDK', '3.3.53'
 #  s.dependency 'BaiduMobAdSDK', '5.322'
 #  s.dependency 'JADYun', '2.4.6'
+
+  s.default_subspec = 'UbiXAdSDK', 'UbiXDaq'
+
+  s.subspec 'UbiXDaq' do |sp|
+    sp.name             = 'UbiXDaq'
+    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXDaq.framework']
+  end
+
+  s.subspec 'UbiXAdSDK' do |sp|
+    sp.name             = 'UbiXAdSDK'
+    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXAdSDK.framework']
+    sp.dependency 'UBiXMediationSDK/UbiXDaq'
+  end 
+
+  
+
 end
