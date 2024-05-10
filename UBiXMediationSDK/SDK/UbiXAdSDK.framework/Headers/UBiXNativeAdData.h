@@ -9,6 +9,19 @@
 #import "UBiXAdSDKDefines.h"
 
 /**
+ * 图片创意信息
+ */
+@interface UBiXNativeAdDataImage : NSObject
+/// 素材地址
+@property (nonatomic, copy, readonly) NSString *imageUrl;
+/// 宽
+@property (nonatomic, assign, readonly) int width;
+/// 高
+@property (nonatomic, assign, readonly) int height;
+@end
+
+
+/**
  * 视频类创意信息
  */
 @interface UBiXNativeAdDataVideoAdInfo : NSObject
@@ -24,6 +37,7 @@
 /**
  * 下载类信息
  */
+__attribute__((deprecated("It will be removed in a future version")))
 @interface UBiXNativeAdDataDownloadAdInfo : NSObject
 /// app名称
 @property (nonatomic, copy, readonly) NSString *name;
@@ -58,8 +72,14 @@
 /// 按钮文案
 @property (nonatomic, copy, readonly) NSString *callToAction;
 
+/// 广告创意图标
+@property (nonatomic, copy, readonly) NSString *iconUrl;
+
 /// 广告图片素材地址
 @property (nonatomic, strong, readonly) NSArray <NSString *>*imageUrls;
+
+/// 广告图片素材
+@property (nonatomic, strong, readonly) NSArray <UBiXNativeAdDataImage *>*images;
 
 /// 是否是视频类广告
 @property (nonatomic, assign, readonly) BOOL isVideoAd;
@@ -69,9 +89,27 @@
 @property (nonatomic, strong, readonly) UBiXNativeAdDataVideoAdInfo *videoAdInfo;
 
 /// 是否下载类广告
-@property (nonatomic, assign, readonly) BOOL isDownloadAd;
+@property (nonatomic, assign, readonly) BOOL isDownloadAd __attribute__((deprecated("Useless. It will be removed in a future version")));
 //@property (nonatomic, assign, getter=isDownloadAd) BOOL downloadAd;
 
 /// 下载类信息描述
-@property (nonatomic, strong, readonly) UBiXNativeAdDataDownloadAdInfo *downloadAdInfo;
+@property (nonatomic, strong, readonly) UBiXNativeAdDataDownloadAdInfo *downloadAdInfo __attribute__((deprecated("Useless. It will be removed in a future version")));
+
+/// 应用名称
+@property (nonatomic, copy, readonly) NSString *appName;
+
+/// 应用描述
+@property (nonatomic, copy, readonly) NSString *appDesc;
+
+/// 应用版本
+@property (nonatomic, copy, readonly) NSString *appVersion;
+
+/// 应用开发者
+@property (nonatomic, copy, readonly) NSString *appPublisher;
+
+/// 隐私协议
+@property (nonatomic, copy, readonly) NSString *privacyUrl;
+
+/// 权限声明
+@property (nonatomic, copy, readonly) NSString *permissionUrl;
 @end

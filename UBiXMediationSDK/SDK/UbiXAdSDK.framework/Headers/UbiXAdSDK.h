@@ -14,6 +14,9 @@
 #import <UbiXAdSDK/UBiXNativeAd.h>
 #import <UbiXAdSDK/UBiXNativeAdObject.h>
 #import <UbiXAdSDK/UBiXNativeAdData.h>
+#import <UbiXAdSDK/UBiXNativeAdRelatedView.h>
+#import <UbiXAdSDK/UBiXNativeAdVideoView.h>
+#import <UbiXAdSDK/UBiXNativeAdVideoReporter.h>
 #import <UbiXAdSDK/UBiXInterstitialAd.h>
 #import <UbiXAdSDK/UBiXRewardedVideoAd.h>
 #import <UbiXAdSDK/UBiXBannerAdView.h>
@@ -30,6 +33,9 @@
 #import "UBiXNativeAd.h"
 #import "UBiXNativeAdObject.h"
 #import "UBiXNativeAdData.h"
+#import "UBiXNativeAdRelatedView.h"
+#import "UBiXNativeAdVideoView.h"
+#import "UBiXNativeAdVideoReporter.h"
 #import "UBiXInterstitialAd.h"
 #import "UBiXRewardedVideoAd.h"
 #import "UBiXBannerAdView.h"

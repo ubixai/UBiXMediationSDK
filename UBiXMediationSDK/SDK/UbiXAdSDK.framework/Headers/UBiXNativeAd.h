@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UBiXAdSDKDefines.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -42,8 +43,16 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  构造方法
  *  @param placementId 广告位ID
+ *  默认广告类型adType = UBiXNativeAdType_Native
  */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
+
+/**
+ *  构造方法 v2.3.1新增
+ *  @param placementId 广告位ID
+ *  @param adType 广告类型
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId adType:(UBiXNativeAdType)adType;
 
 /**
  * 加载1条广告

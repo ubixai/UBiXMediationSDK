@@ -16,8 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 信息流组件工具
  *  - 生成视频view和视频事件上报reporter
+ *  - 需生成UI组件，请在主线程中使用
  */
 @interface UBiXNativeAdRelatedView : NSObject
+/// logo组件 (v2.3.1新增)
+@property (nonatomic, strong, readonly) UIImageView *logoView;
+
 /// 视频组件(刷新数据后获取)
 @property (nonatomic, strong, readonly, nullable) UBiXNativeAdVideoView *videoView;
 

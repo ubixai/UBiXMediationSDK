@@ -17,7 +17,3 @@ typedef enum : UInt8 {
 
 /// 设置控制台日志打印级别
 void UBiXSetLoggerLevel(UBiXLoggerLevel level);
-void UBiXDebug(NSString * _Nonnull fmt, ...);
-void UBiXInfo(NSString * _Nonnull fmt, ...);
-void UBiXWarn(NSString * _Nonnull fmt, ...);
-void UBiXError(NSString * _Nonnull fmt, ...);

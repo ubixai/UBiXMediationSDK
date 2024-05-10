@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.4.1.04'
+  s.version          = '2.4.1.05'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -50,18 +50,19 @@ TODO: Add long description of the pod here.
 #  s.dependency 'KSAdSDK', '3.3.53'
 #  s.dependency 'BaiduMobAdSDK', '5.322'
 #  s.dependency 'JADYun', '2.4.6'
+  s.dependency 'UBiXDaq'
 
-  s.default_subspec = 'UbiXAdSDK', 'UbiXDaq'
+  s.default_subspec = 'UbiXAdSDK'
 
-  s.subspec 'UbiXDaq' do |sp|
-    sp.name             = 'UbiXDaq'
-    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXDaq.framework']
-  end
+#  s.subspec 'UbiXDaq' do |sp|
+#    sp.name             = 'UbiXDaq'
+#    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXDaq.framework']
+#  end
 
   s.subspec 'UbiXAdSDK' do |sp|
     sp.name             = 'UbiXAdSDK'
     sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXAdSDK.framework']
-    sp.dependency 'UBiXMediationSDK/UbiXDaq'
+    sp.dependency 'UBiXDaq'
   end 
 
   

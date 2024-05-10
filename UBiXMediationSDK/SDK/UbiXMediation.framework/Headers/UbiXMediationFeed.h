@@ -41,7 +41,7 @@ typedef enum {
 - (BOOL)isAvaliable;
 
 /** 设置可以点击和关闭的图层 */
-- (void)setContainer:(UIView *)containerView clickableViews:(NSArray *)clickableViews closableViews:(NSArray *)closableViews;
+- (void)setContainer:(UIView *)containerView clickableViews:(NSArray *)clickableViews closableViews:(NSArray *)closableViews DEPRECATED_MSG_ATTRIBUTE("即将废弃，请使用[UbiXMedationFeedAdModel setContainer: clickableViews: closableViews:]");
 
 /**
  返回广告的eCPM，单位：分
