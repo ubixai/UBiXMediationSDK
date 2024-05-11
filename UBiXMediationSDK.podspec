@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.4.1.05'
+  s.version          = '2.4.1.06'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -24,8 +24,8 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://www.ubixai.com/product/md'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'stefan.qi' => 'stefan.qi@ubixai.com' }
-  s.source           = { :git => 'https://github.com/honourcoder/UBiXMediationSDK.git', :tag => s.version.to_s }
+  s.author           = { 'ubixai' => 'pub.dev@ubixai.com' }
+  s.source           = { :git => 'https://github.com/ubixai/UBiXMediationSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -50,20 +50,20 @@ TODO: Add long description of the pod here.
 #  s.dependency 'KSAdSDK', '3.3.53'
 #  s.dependency 'BaiduMobAdSDK', '5.322'
 #  s.dependency 'JADYun', '2.4.6'
-  s.dependency 'UBiXDaq'
+  s.dependency 'UBiXMerakSDK', '2.3.3'
 
-  s.default_subspec = 'UbiXAdSDK'
+#  s.default_subspec = 'UbiXAdSDK'
 
 #  s.subspec 'UbiXDaq' do |sp|
 #    sp.name             = 'UbiXDaq'
 #    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXDaq.framework']
 #  end
 
-  s.subspec 'UbiXAdSDK' do |sp|
-    sp.name             = 'UbiXAdSDK'
-    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXAdSDK.framework']
-    sp.dependency 'UBiXDaq'
-  end 
+#  s.subspec 'UbiXAdSDK' do |sp|
+#    sp.name             = 'UbiXAdSDK'
+#    sp.vendored_frameworks = ['UBiXMediationSDK/SDK/UbiXAdSDK.framework']
+#    sp.dependency 'UBiXDaq'
+#  end 
 
   
 
