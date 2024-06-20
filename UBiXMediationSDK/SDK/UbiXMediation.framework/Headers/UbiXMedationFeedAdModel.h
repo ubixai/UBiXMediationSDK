@@ -11,6 +11,7 @@
 #import <UbiXMediation/UBiXMFeedbackIconView.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class UbiXMediationMediaView;
 
 @interface UbiXMedationFeedAdModel : NSObject
 
@@ -28,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
+
+- (void)renderView:(UbiXMediationMediaView *)view selfRenderView:(UIView *)selfRenderView;
 
 /// 绑定点击事件图层
 - (void)setContainer:(UIView *)containerView clickableViews:(NSArray *)clickableViews closableViews:(NSArray *)closableViews;

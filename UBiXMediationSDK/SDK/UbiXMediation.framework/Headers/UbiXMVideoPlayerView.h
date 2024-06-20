@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UbiXMediationMediaView.h"
+#import <UbiXMediation/UbiXMediationMediaView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

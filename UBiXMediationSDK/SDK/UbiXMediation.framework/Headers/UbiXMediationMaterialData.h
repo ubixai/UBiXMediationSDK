@@ -49,6 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 给开发者的出价
 @property(nonatomic, assign) NSInteger adBidPrice;
 
+/// 广告源名称
+@property (nonatomic, copy) NSString *adSourceName;
+
 @end
 
 NS_ASSUME_NONNULL_END

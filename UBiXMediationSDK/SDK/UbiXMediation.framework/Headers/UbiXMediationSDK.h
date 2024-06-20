@@ -14,6 +14,19 @@
 
 
 NS_ASSUME_NONNULL_BEGIN
+/// 【可选】NSNumber，是否在adn中使用位置，如果是，adn将自己获得纬度和经度，而不是使用传入的值（  kUbiXMPrivacyLongitude/  kUbiXMPrivacyLatitude）。
+const static NSString *kUbiXMPrivacyCanLocation = @"kUbiXMPrivacyCanLocation";
+/// 【可选】NSNumber，经度的值。默认值是0.0。
+const static NSString *  kUbiXMPrivacyLongitude = @"kUbiXMPrivacyLongitude";
+/// 【可选】NSNumber，纬度的值。默认值是0.0。
+const static NSString *  kUbiXMPrivacyLatitude = @"kUbiXMPrivacyLatitude";
+/// 【可选】NSNumber，是否限制个性化广告:0-不限制，1-限制，默认为0。
+const static NSString *kUbiXMPrivacyLimitPersonalAds = @"kUbiXMPrivacyLimitPersonalAds";
+/// 【可选】NSNumber，是否禁止CAID：0-不禁止，1-禁止，默认为0。
+const static NSString *  kUbiXMPrivacyForbiddenCAID = @"kUbiXMPrivacyForbiddenCAID";
+/// 【可选】NSNumber，是否禁止IDFA：0-不禁止，1-禁止，默认为0。
+const static NSString *  kUbiXMPrivacyForbiddenIDFA = @"kUbiXMPrivacyForbiddenIDFA";
+
 
 @interface UbiXMConcealConfig: NSObject
 

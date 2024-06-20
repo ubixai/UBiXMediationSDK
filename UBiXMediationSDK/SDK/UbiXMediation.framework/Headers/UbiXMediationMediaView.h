@@ -6,8 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UbiXMediationMaterialData.h"
-#import "UbiXMediationPasterReporter.h"
+#import <UbiXMediation/UbiXMediationMaterialData.h>
+#import <UbiXMediation/UbiXMediationPasterReporter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
