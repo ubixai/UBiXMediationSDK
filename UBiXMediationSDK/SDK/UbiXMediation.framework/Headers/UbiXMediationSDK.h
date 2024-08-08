@@ -26,6 +26,8 @@ const static NSString *kUbiXMPrivacyLimitPersonalAds = @"kUbiXMPrivacyLimitPerso
 const static NSString *  kUbiXMPrivacyForbiddenCAID = @"kUbiXMPrivacyForbiddenCAID";
 /// 【可选】NSNumber，是否禁止IDFA：0-不禁止，1-禁止，默认为0。
 const static NSString *  kUbiXMPrivacyForbiddenIDFA = @"kUbiXMPrivacyForbiddenIDFA";
+/// 【可选】NSString，自定义 idfa
+const static NSString * kUbiXMPrivacyCustomIDFA = @"kUbiXMPrivacyCustomIDFA";
 
 
 @interface UbiXMConcealConfig: NSObject
@@ -36,7 +38,7 @@ const static NSString *  kUbiXMPrivacyForbiddenIDFA = @"kUbiXMPrivacyForbiddenID
 /**  是否允许用户读取网络状态信息， 默认允许  **/
 @property (nonatomic, assign) BOOL isCanReadNetType;
 
-/**  是否允许用户读取idfa， 默认允许  **/
+/**  是否允许用户读取idfa， 默认不允许  **/
 @property (nonatomic, assign) BOOL isCanReadIDFA;
 
 /**  是否允许个性化广告推荐 默认允许 0 拒绝，1 允许  **/
