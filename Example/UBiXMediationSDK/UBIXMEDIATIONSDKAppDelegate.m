@@ -13,7 +13,7 @@
 #import <UbiXAdSDK/UbiXAdSDK.h>
 #import "UBIXMEDIATIONSDKViewController.h"
 #import <BUAdSDK/BUAdSDK.h>
-#import "MYAdsConfiguration.h"
+//#import "MYAdsConfiguration.h"
 
 @interface AdWindow : UIWindow <UbiXMediationSplashDelegate>
 @property (nonatomic, strong)UbiXMediationSplash *splash;
@@ -135,7 +135,7 @@
     NSLog(@"daq, v%@", UBIX_DAQ_VERSION);
     NSLog(@"UBIX, v%@", UBiXAdSDKManager.SDKVersion);
     NSLog(@"Pangle, v%@", BUAdSDKManager.SDKVersion);
-    NSLog(@"MY, v%@", [MYAdsConfiguration shareInstance].sdkVersion);
+//    NSLog(@"MY, v%@", [MYAdsConfiguration shareInstance].sdkVersion);
     
     [self setupUBiXMediationSDK];
     
