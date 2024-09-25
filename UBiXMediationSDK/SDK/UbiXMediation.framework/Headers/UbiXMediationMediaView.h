@@ -98,6 +98,12 @@ typedef NS_ENUM(NSUInteger, UbiXMMediaPlayerStatus) {
 /** 将广告数据绑定到View播放器上 */
 - (void)bindViewWithAdData:(UbiXMediationMaterialData *)adData;
 
+/// 图片自渲染容器绑定
+- (void)bindViewWithAdData:(UbiXMediationMaterialData *)adData 
+                 container:(UIView *)containerView
+            clickableViews:(NSArray *)clickableViews
+        rootViewController:(UIViewController *__nullable)rootVC;
+
 /**  播放视频  **/
 - (void)playVideo;
 
