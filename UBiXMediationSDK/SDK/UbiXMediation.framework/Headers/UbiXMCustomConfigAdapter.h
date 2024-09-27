@@ -23,6 +23,11 @@
 /// @param initConfig 初始化配置，包括appid、appkey基本信息和部分用户传递配置
 - (void)initializeAdapterWithConfiguration:(UbiXMSdkInitConfig *_Nullable)initConfig;
 
+/// adn初始化方法
+/// @param initConfig 初始化配置，包括appid、appkey基本信息和部分用户传递配置
+- (void)initializeAdapterWithConfiguration:(UbiXMSdkInitConfig *_Nullable)initConfig
+                                 completed:(void(^)(BOOL succ, NSError *error))handler;
+
 /// adapter的版本号
 - (NSString *_Nonnull)adapterVersion;
 

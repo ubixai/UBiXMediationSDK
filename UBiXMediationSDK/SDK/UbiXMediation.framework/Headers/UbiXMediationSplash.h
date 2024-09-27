@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol UbiXMediationSplashDelegate;
+@protocol UbiXMediationSplashXXModelDelegate;
 
 typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
     UbiXMSkipButtonShowTypeDefault = 0, // 椭圆样式，默认样式
@@ -21,6 +22,8 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 
 // 开屏广告的回调代理
 @property (nonatomic, weak)id<UbiXMediationSplashDelegate> delegate;
+
+@property (nonatomic, weak) id<UbiXMediationSplashXXModelDelegate> xxmodelDelegate;
 
 // 底部视图, 如有需要确定宽高, 开发者自定义（可选）
 @property (nonatomic, strong)UIView *bottomView;
@@ -59,7 +62,9 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 - (void)loadAdWithAdm:(NSString *)adm;
 
 @end
-
+@protocol UbiXMediationSplashXXModelDelegate <NSObject>
+- (nullable id )ubixm_modelToJSONObject:(NSObject *)obj;
+@end
 
 @protocol UbiXMediationSplashDelegate <NSObject>
 
