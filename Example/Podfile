@@ -10,12 +10,12 @@ target 'UBiXMediationSDK_Example' do
 #  pod 'Ads-CN', '5.8.0.9'
 #  pod 'Ads-Global', '5.7.0.7'
    # gromore 融合
-   pod 'Ads-CN-Beta/BUAdSDK','6.4.0.9'
-   pod 'Ads-CN-Beta/CSJMediation','6.4.0.9'
+   pod 'Ads-CN-Beta/BUAdSDK','6.5.0.1'
+   pod 'Ads-CN-Beta/CSJMediation','6.5.0.1'
    # 优量汇
-   pod 'GDTMobSDK', '4.15.02'
+   pod 'GDTMobSDK', '4.15.10'
    # 快手
-   pod 'KSAdSDK', '3.3.69'
+   pod 'KSAdSDK', '3.3.69.3'
    # 百度
    pod 'UBiXMBaiduAdapter', '5.371.0'
 #   pod 'BaiduMobAdSDK', '5.35'
