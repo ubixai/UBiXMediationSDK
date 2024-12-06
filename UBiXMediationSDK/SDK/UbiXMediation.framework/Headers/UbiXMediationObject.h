@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 广告位Id
 @property (nonatomic, copy) NSString *slotId;
-// 广告requestId
-@property (nonatomic, copy) NSString *requestId;
 
 /**
  初始化
