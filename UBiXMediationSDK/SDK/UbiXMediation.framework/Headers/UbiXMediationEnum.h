@@ -8,6 +8,19 @@
 #ifndef UbiXMediationEnum_h
 #define UbiXMediationEnum_h
 
+typedef NS_ENUM(NSInteger, UBiXMVideoMuteType) {
+    UBiXMVideoMuteType_Unknown = 0,    // 未知
+    UBiXMVideoMuteType_Mute = 1,       // 静音
+    UBiXMVideoMuteType_NoMute = 2,     // 不静音
+};
+
+typedef NS_ENUM(NSInteger, UBiXMVideoPlayNetType) {
+    UBiXMVideoPlayNetType_Unknown = 0,        // 未知
+    UBiXMVideoPlayNetType_WifiAndMobile = 1,  // wifi+移动
+    UBiXMVideoPlayNetType_OnlyWifi = 2,       // 仅wifi
+    UBiXMVideoPlayNetType_Never = 3,          // 不播放
+};
+
 typedef NS_ENUM(NSInteger, UbiXMVideoPlayerStatus) {
     UbiXMVideoPlayerStatusFailed = -1, // 加载失败
     UbiXMVideoPlayerStatusInitialize,  // 初始

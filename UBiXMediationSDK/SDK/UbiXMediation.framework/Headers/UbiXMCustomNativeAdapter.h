@@ -44,6 +44,8 @@
 /// @param views 可点击视图组
 - (void)registerContainerView:(__kindof UIView *)containerView andClickableViews:(NSArray<__kindof UIView *> *)views closableViews:(NSArray *)closableViews forNativeAd:(id)nativeAd;
 
+- (UIView *)shakeViewForNativeAd:(id)nativeAd size:(CGSize)size;
+
 - (void)unRegisterView;
 
 @optional

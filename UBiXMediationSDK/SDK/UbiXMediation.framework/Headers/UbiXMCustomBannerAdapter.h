@@ -20,6 +20,8 @@
 /// @param parameter 广告加载参数
 - (void)loadBannerAdWithSlotID:(NSString *)slotID andSize:(CGSize)adSize parameter:(nullable NSDictionary *)parameter;
 
+- (void)showBannerWithParameter:(nullable NSDictionary *)parameter;
+
 /// 当前加载的广告的状态
 - (UbiXMMediatedAdStatus)mediatedAdStatus;
 
