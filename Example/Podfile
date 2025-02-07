@@ -4,26 +4,26 @@ platform :ios, '11.0'
 
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
-  pod 'UBiXMediationSDK', :path => '../'
-#   pod 'UBiXMediationSDK', '2.7.0.02'
+#  pod 'UBiXMediationSDK', :path => '../'
+   pod 'UBiXMediationSDK', '2.7.0.02'
 
    # gromore 融合
-   pod 'Ads-CN-Beta/BUAdSDK','6.6.0.0'
-   pod 'Ads-CN-Beta/CSJMediation','6.6.0.0'
+   pod 'Ads-CN-Beta/BUAdSDK','6.6.0.4'
+   pod 'Ads-CN-Beta/CSJMediation','6.6.0.4'
    # 优量汇
-   pod 'GDTMobSDK', '4.15.10'
+   pod 'GDTMobSDK', '4.15.20'
    # 快手
-   pod 'KSAdSDK', '3.3.69.3'
+   pod 'KSAdSDK', '3.3.72'
    # 百度
-   pod 'UBiXMBaiduAdapter', '5.371.0'
+   pod 'UBiXMBaiduAdapter', '5.371.1'
 #   pod 'BaiduMobAdSDK', '5.371'
    # 京东
-   pod 'JADYun', '2.6.6'
-   pod 'JADYunMotion', '2.6.6'
+   pod 'JADYun', '2.6.8'
+   pod 'JADYunMotion', '2.6.8'
   # 天璇
   pod 'UBiXMerakSDK', '2.5.0'
   
-#  pod 'UBiXMQMAdapter', '1.2.0.1'
+  pod 'UBiXMQMAdapter', '1.2.0.2'
 
 
 
