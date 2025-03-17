@@ -5,7 +5,7 @@ platform :ios, '11.0'
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
 #  pod 'UBiXMediationSDK', :path => '../'
-   pod 'UBiXMediationSDK', '2.7.1'
+   pod 'UBiXMediationSDK', '2.7.2'
 
    # gromore 融合
    pod 'Ads-CN-Beta','6.7.0.3', :subspecs => ['BUAdSDK', 'CSJMediation']
@@ -25,7 +25,7 @@ target 'UBiXMediationSDK_Example' do
   pod 'UBiXMUBiXAdapter', '2.5.1.0'
 #  pod 'UBiXMerakSDK', '2.5.1'
   
-  pod 'UBiXMQMAdapter', '1.3.2.0'
+  pod 'UBiXMQMAdapter', '1.3.3.0'
 
 
 
