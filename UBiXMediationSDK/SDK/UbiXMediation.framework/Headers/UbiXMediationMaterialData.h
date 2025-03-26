@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UbiXMediation/UbiXMediationPasterReporter.h>
+#import "UbiXMediationNativeAd.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -51,6 +52,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 广告源名称
 @property (nonatomic, copy) NSString *adSourceName;
+
+@property (nonatomic, strong) UbiXMediationNativeAd *customAdnNativeAd;
 
 @end
 
