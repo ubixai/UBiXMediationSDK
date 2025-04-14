@@ -26,6 +26,8 @@ const static NSString *kUbiXMPrivacyLimitPersonalAds = @"kUbiXMPrivacyLimitPerso
 const static NSString *  kUbiXMPrivacyForbiddenIDFA = @"kUbiXMPrivacyForbiddenIDFA";
 /// 【可选】NSString，自定义 idfa
 const static NSString * kUbiXMPrivacyCustomIDFA = @"kUbiXMPrivacyCustomIDFA";
+/// 【可选】NSNumber，是否开启传感器/摇一摇: 0-禁止，1-开启，默认为1。
+const static NSString *kUbiXMPrivacySensorEnable = @"kUbiXMPrivacySensorEnable";
 
 
 @interface UbiXMConcealConfig: NSObject
@@ -109,6 +111,16 @@ typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
  * 可选, 是否限制个性化推荐:  NO-不限制、YES-限制，默认为NO。官方维护版本中只适用于CSJ，Ks、百度、GDT 、UbiX
  */
 @property (class, nonatomic, assign) BOOL limitPersonalAds;
+
+/**
+  设置扩展信息
+  @param extra 必须为有效的字符串格式的键值对
+ 
+  已支持的key有：
+    UbiXMediationEnum.h 定义，
+ kUBiXMExtraModel_SensorEnabled, 是否开启传感器，默认开启，值为字符串格式，"0"：关闭传感器；非"0"：开启传感器
+ */
++ (void)setExtraModel:(NSDictionary <NSString *, NSString *> *)extra;
 
 /**
  初始化方法

@@ -8,6 +8,8 @@
 #ifndef UbiXMediationEnum_h
 #define UbiXMediationEnum_h
 
+extern NSString *const kUBiXMExtraModel_SensorEnabled;
+
 typedef NS_ENUM(NSInteger, UBiXMVideoMuteType) {
     UBiXMVideoMuteType_Unknown = 0,    // 未知
     UBiXMVideoMuteType_Mute = 1,       // 静音

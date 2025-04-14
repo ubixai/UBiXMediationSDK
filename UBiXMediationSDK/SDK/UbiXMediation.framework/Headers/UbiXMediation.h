@@ -17,6 +17,7 @@
 #import <UbiXMediation/UbiXMediationSplash.h>
 #import <UbiXMediation/UbiXMediationBanner.h>
 #import <UbiXMediation/UbiXMediationPaster.h>
+#import <UbiXMediation/UbiXMediationEnum.h>
 //#import "UbiXIntegrationHelper.h"
 
 //! Project version number for UbiXMediation.
