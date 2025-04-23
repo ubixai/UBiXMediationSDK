@@ -7,7 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import <UbiXMediation/UbiXMediationMaterialData.h>
-#import <UbiXMediation/UbiXMediationPasterReporter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -89,8 +88,6 @@ typedef NS_ENUM(NSUInteger, UbiXMMediaPlayerStatus) {
 
 /// 用户自定义的视频播放器
 @property (nonatomic, strong) UIView<UbiXMediationCustomeVideoPlayerDelegate> *customeVideoPlayer;
-/// 广告状态上报对象
-@property (nonatomic, strong) UbiXMediationPasterReporter *reporter;
 
 /// 聚合播放器View的回调代理对象
 @property (nonatomic, weak) id<UbiXMediationMediaViewDelegate> delegate;

@@ -43,6 +43,7 @@ UbiXMMediatedAdStatus UbiXMMediatedAdStatusMake(UbiXMMediatedAdStatusValue isRea
     status.valid = valid;
     return status;
 }
+void UBiXMLogDebug(NSString * _Nonnull fmt, ...);
 
 /// 自定义adapter广告类型基本协议
 @protocol UbiXMCustomAdapter <NSObject>

@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UbiXMediation/UbiXMediationPasterReporter.h>
 #import "UbiXMediationNativeAd.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -35,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 是否是视频素材的广告
 @property (nonatomic, assign) BOOL isVideoAd;
+/// 是否摇一摇广告
+@property (nonatomic, assign) BOOL isShakeAd;
 
 /// 视频时长
 @property (nonatomic, assign) NSInteger videoDuration;
@@ -44,8 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 广告附属字段
 @property (nonatomic, assign) NSInteger adSourcetype;
 
-/// 广告状态上报对象
-@property (nonatomic, strong) UbiXMediationPasterReporter *reporter;
 
 /// 给开发者的出价
 @property(nonatomic, assign) NSInteger adBidPrice;

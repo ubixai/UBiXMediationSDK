@@ -103,11 +103,6 @@
 /// @param nativeAd 广告数据，native广告请传递原始数据（即UbiXMediationNativeAd.originMediatedNativeAd），express广告请传递上报UbiXM的UIView
 - (void)nativeAd:(id<UbiXMCustomNativeAdapter>_Nonnull)adapter videoStateDidChangedWithState:(UbiXMVideoPlayerStatus)state andNativeAd:(id _Nonnull)nativeAd;
 
-/// 激励信息流视频进入倒计时状态时调用
-/// @param adapter 当前适配器
-/// @param countDown : 倒计时
-/// @Note : 当前该回调仅适用于CSJ广告
-- (void)nativeAd:(id<UbiXMCustomNativeAdapter>_Nonnull)adapter rewardDidCountDown:(NSInteger)countDown andNativeAd:(id _Nonnull)nativeAd;
 
 /// 视频广告中视频视图被点击时调用，直接调用即可，无需做响应判断
 /// @param adapter 当前适配器
