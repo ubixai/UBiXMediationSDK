@@ -59,7 +59,7 @@
 
 /// 广告视图即将被展示回调，只会调用一次
 /// @param expressAdView 模板广告视图
-/// @param mediatedNativeAd GroMore包装的广告数据
+/// @param mediatedNativeAd UbiXM包装的广告数据
 - (void)adViewWillAddToSuperViewWithExpressAdView:(__kindof UIView *)expressAdView orMediatedNativeAd:(UbiXMediationNativeAd *)mediatedNativeAd;
 
 /// 代理，开发者需使用该对象回调事件，Objective-C下自动生成无需设置，Swift需声明
