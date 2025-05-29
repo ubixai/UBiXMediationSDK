@@ -57,7 +57,7 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 /**
  * 在Deleggate  中获取生成的 token
  */
-- (NSString *)buildBiddingToken;
+- (void)buildBiddingToken;
 
 - (void)loadAdWithAdm:(NSString *)adm;
 
