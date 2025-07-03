@@ -1,3 +1,6 @@
+source "https://github.com/CocoaPods/Specs.git"
+#source "https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git"
+
 use_frameworks!
 
 platform :ios, '11.0'
@@ -5,31 +8,27 @@ platform :ios, '11.0'
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
   pod 'UBiXMediationSDK', :path => '../'
-#   pod 'UBiXMediationSDK', '2.8.2.02'
+#   pod 'UBiXMediationSDK', '2.8.2.1204'
 
    # gromore 融合
    pod 'Ads-CN-Beta','6.8.0.5', :subspecs => ['BUAdSDK', 'CSJMediation']
    # 优量汇
    pod 'GDTMobSDK', '4.15.30'
    # 快手
-   pod 'UBiXMKSAdapter', '3.3.75.0'
+   pod 'UBiXMKSAdapter', '3.3.76.5.0'
 #   pod 'KSAdSDK', '3.3.75'
    # 百度
-   pod 'UBiXMBaiduAdapter', '5.39.0'
+   pod 'UBiXMBaiduAdapter', '5.391.0'
 #   pod 'BaiduMobAdSDK', '5.39'
    # 京东
    pod 'UBiXMJDAdapter', '2.6.8.2'
 #   pod 'JADYun', '2.6.8'
 #   pod 'JADYunMotion', '2.6.8'
   # 天璇
-  pod 'UBiXMUBiXAdapter', '2.6.1.0'
+  pod 'UBiXMUBiXAdapter', '2.6.2.0'
 #  pod 'UBiXMerakSDK', '2.6.1'
   
-  pod 'UBiXMQMAdapter', '1.3.3.3'
-
-  pod 'MYIOSAdsSDK', '5.5.16'
-  pod 'CocoaAsyncSocket'
-  pod 'WechatOpenSDK', '2.0.4'
+  pod 'UBiXMQMAdapter', '1.3.4.1'
 
 
 
