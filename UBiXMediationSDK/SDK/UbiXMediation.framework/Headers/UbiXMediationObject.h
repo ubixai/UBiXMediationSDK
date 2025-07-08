@@ -22,8 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithSlotId:(NSString *)slotId;
 
-- (id)extraInfoForKey:(NSString *)key;
-
 @end
 
 NS_ASSUME_NONNULL_END

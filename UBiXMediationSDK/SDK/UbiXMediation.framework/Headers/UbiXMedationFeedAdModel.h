@@ -12,8 +12,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class UbiXMediationMediaView;
+@class UbiXMediationFeed;
 
 @interface UbiXMedationFeedAdModel : NSObject
+
+@property (nonatomic, weak) UbiXMediationFeed *feedAd;
 
 /// 是否是模板广告
 @property (nonatomic, assign) BOOL isExpressAd;

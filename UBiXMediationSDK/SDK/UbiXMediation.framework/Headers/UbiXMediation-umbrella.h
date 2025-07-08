@@ -36,7 +36,6 @@
 #import "UbiXMediationMediaView.h"
 #import "UBiXMFeedbackIconView.h"
 #import "UbiXMVideoPlayerView.h"
-#import "UbiXMAdsMaterialInfo.h"
 #import "UbiXMediation.h"
 #import "UbiXMediationAdView.h"
 #import "UbiXMediationBanner.h"
