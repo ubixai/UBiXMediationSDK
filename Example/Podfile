@@ -8,18 +8,18 @@ platform :ios, '11.0'
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
   pod 'UBiXMediationSDK', :path => '../'
-#   pod 'UBiXMediationSDK', '2.9.0.1001'
+#   pod 'UBiXMediationSDK', '2.9.1'
 
    # gromore 融合
    pod 'UBiXMGromoreAdapter', '7.0.0.3.0'
 #   pod 'Ads-CN-Beta','7.0.0.3', :subspecs => ['BUAdSDK', 'CSJMediation']
    # 优量汇
-   pod 'GDTMobSDK', '4.15.41'
+   pod 'GDTMobSDK', '4.15.50'
    # 快手
    pod 'UBiXMKSAdapter', '4.6.30.1.0'
 #   pod 'KSAdSDK', '4.6.30.1'
    # 百度
-   pod 'UBiXMBaiduAdapter', '5.394.0'
+   pod 'UBiXMBaiduAdapter', '5.400.0'
 #   pod 'BaiduMobAdSDK', '5.394'
    # 京东
    pod 'UBiXMJDAdapter', '2.6.8.2'
