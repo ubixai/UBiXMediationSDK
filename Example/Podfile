@@ -8,7 +8,7 @@ platform :ios, '11.0'
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
   pod 'UBiXMediationSDK', :path => '../'
-#   pod 'UBiXMediationSDK', '2.10.1'
+#   pod 'UBiXMediationSDK', '2.10.1.1001'
 
    # gromore 融合
    pod 'UBiXMGromoreAdapter', '7.1.0.7.0'
