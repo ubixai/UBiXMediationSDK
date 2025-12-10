@@ -37,6 +37,8 @@ typedef NS_ENUM(NSInteger, UBiXMMaterialType) {
 
 @property (nonatomic, copy) NSString *appPackageName;
 
+@property (nonatomic, assign) UBiXMMaterialType materialType;
+
 @property (nonatomic, strong) NSArray<UbiXMMaterialFea *> *materialList;
 
 - (id)initWithMaterialDic:(NSDictionary *)dic;
