@@ -9,12 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UbiXMediationObject : NSObject
+@protocol UbiXMediationAdProtocol <NSObject>
 
 // 广告位Id
 @property (nonatomic, copy) NSString *slotId;
 // 广告requestId
-@property (nonatomic, copy) NSString *requestId;
+@property (nonatomic, copy, readonly) NSString *requestId;
 
 /**
  初始化
@@ -23,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithSlotId:(NSString *)slotId;
 
 - (id)extraInfoForKey:(NSString *)key;
+
+@end
+
+@interface UbiXMediationObject : NSObject <UbiXMediationAdProtocol>
 
 @end
 

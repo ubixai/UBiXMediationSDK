@@ -15,6 +15,13 @@
 
 @class UbiXMediationMediaView;
 
+@protocol UbiXMNativeSelfRenderViewCreator <NSObject>
+
+- (UIView *)mediaView;
+- (UbiXMediationNativeAd*)uxmNativeAd;
+
+@end
+
 /// 自定义Native广告的adapter广告协议
 @protocol UbiXMCustomNativeAdapter <UbiXMCustomAdapter>
 
@@ -45,11 +52,14 @@
 - (void)registerContainerView:(__kindof UIView *)containerView andClickableViews:(NSArray<__kindof UIView *> *)views closableViews:(NSArray *)closableViews forNativeAd:(id)nativeAd;
 
 - (UIView *)shakeViewForNativeAd:(id)nativeAd size:(CGSize)size;
+/// 是否需要使用广告源提供的 摇一摇组件
+- (BOOL)needAdnShakeWidget;
 
 - (void)unRegisterView;
 
 @optional
-- (void)renderView:(UbiXMediationMediaView *)view selfRenderView:(nonnull UIView *)selfRenderView;
+//- (void)renderView:(UbiXMediationMediaView *)view selfRenderView:(nonnull UIView *)selfRenderView;
+- (void)renderView:(nullable UbiXMediationMediaView *)view selfRenderView:(UIView<UbiXMNativeSelfRenderViewCreator> *)selfRenderView;
 
 /// 当前加载的广告的状态，native模板广告
 - (UbiXMMediatedAdStatus)mediatedAdStatusWithExpressView:(UIView *)view;
