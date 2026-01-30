@@ -8,34 +8,40 @@ platform :ios, '11.0'
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
   pod 'UBiXMediationSDK', :path => '../'
-#   pod 'UBiXMediationSDK', '2.11.0'
+#   pod 'UBiXMediationSDK', '2.12.0'
 
    # gromore 融合
-   pod 'UBiXMGromoreAdapter', '7.3.0.4.0'
-#   pod 'Ads-CN-Beta','7.0.0.3', :subspecs => ['BUAdSDK', 'CSJMediation']
+   pod 'UBiXMGromoreAdapter', '7.4.0.1.0'
+#   pod 'Ads-CN-Beta','7.4.0.1', :subspecs => ['BUAdSDK', 'CSJMediation']
    # 穿山甲
-#   pod 'UBiXMCSJAdapter', '7.3.0.4.0'
+#   pod 'UBiXMCSJAdapter', '7.4.0.1.0'
    # 优量汇
-   pod 'UBiXMGdtAdapter', '4.15.65.0'
-#   pod 'GDTMobSDK', '4.15.65'
+   pod 'UBiXMGdtAdapter', '4.15.75.0'
+#   pod 'GDTMobSDK', '4.15.75'
    # 快手
-   pod 'UBiXMKSAdapter', '4.11.30.1.0'
-#   pod 'KSAdSDK', '4.11.30.1'
+   pod 'UBiXMKSAdapter', '4.12.20.1.0'
+#   pod 'KSAdSDK', '4.12.20.1'
    # 百度
-   pod 'UBiXMBaiduAdapter', '10.022.1'
-#   pod 'BaiduMobAdSDK', '10.022'
+   pod 'UBiXMBaiduAdapter', '10.032.0'
+#   pod 'BaiduMobAdSDK', '10.032'
    # 京东
    pod 'UBiXMJDAdapter', '2.6.8.4'
 #   pod 'JADYun', '2.6.8'
 #   pod 'JADYunMotion', '2.6.8'
   # 天璇
-  pod 'UBiXMUBiXAdapter', '2.8.1.0'
-#  pod 'UBiXMerakSDK', '2.8.1'
+  pod 'UBiXMUBiXAdapter', '2.9.0.0'
+#  pod 'UBiXMerakSDK', '2.9.0'
   # 趣盟
-  pod 'UBiXMQMAdapter', '1.3.8.35.0'
+  pod 'UBiXMQMAdapter', '1.4.0.9.0'
   
   # Fancy
-  pod 'UBiXMFancyAdapter', '2.2.98.0'
+  pod 'UBiXMFancyAdapter', '2.3.0.0'
+  
+  # WangMai
+  pod 'UBiXMWangMaiAdapter', '7.5.3.24.0'
+  
+  # Youshi
+  pod 'UBiXMYoushiAdapter', '3.1.0.5.0'
 
   target 'UBiXMediationSDK_Tests' do
     inherit! :search_paths
