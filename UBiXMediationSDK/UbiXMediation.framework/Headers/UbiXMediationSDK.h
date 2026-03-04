@@ -60,12 +60,6 @@ const static NSString *kUbiXMPrivacySensorEnable = @"kUbiXMPrivacySensorEnable";
 
 @end
 
-/// 用户性别, 0: Unknown, 1: Male, 2: Female
-typedef NS_ENUM (int, UbixMUserInfoGender) {
-    UbiXMUserInfoGender_Unknown                  = 0,
-    UbiXMUserInfoGender_Male                     = 1,
-    UbiXMUserInfoGender_Female                   = 2,
-};
 /// 付费用户, 0: 未知；1: 否；2: 是
 typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
     UbiXMUserInfoSubscribe_Unknown              = 0,
@@ -81,11 +75,6 @@ typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
 @property (nonatomic, copy) NSString *channel;
 /// 子渠道， 字符的规则：[A-Za-z0-9_]
 @property (nonatomic, copy) NSString *subChannel;
-/// 用户年龄，用户的年龄段。
-/// [1-18):1;[18-24):18;[24-31):24;[31- 41):31;[41-51):41;50 以上传 50
-@property (nonatomic, assign) int age;
-/// 用户性别
-@property (nonatomic, assign) UbixMUserInfoGender gender;
 /// 付费用户, 0: 未知；1: 否；2: 是
 @property (nonatomic, assign) UbixMUserInfoSubscribe isSubscriber;
 /// 流量分组ID或者标签ID
