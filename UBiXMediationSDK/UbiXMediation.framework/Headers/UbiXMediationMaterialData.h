@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 副标题
 @property (nonatomic, copy) NSString *body;
 
+/// appName
+@property (nonatomic, copy) NSString *appName;
+
 /// icon图片下载链接
 @property (nonatomic, copy) NSString *iconUrl;
 
