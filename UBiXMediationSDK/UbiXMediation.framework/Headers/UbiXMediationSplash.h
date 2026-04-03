@@ -93,9 +93,6 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 // 开屏广告点击回调
 - (void)mediationSplashDidClick:(UbiXMediationSplash *)splash;
 
-// 开屏广告即将关闭回调
-- (void)mediationSplashWillClosed:(UbiXMediationSplash *)splash skip:(BOOL)isSkip DEPRECATED_MSG_ATTRIBUTE("2.8.0即将废弃，不再维护，部分上游会缺失该回调");
-
 // 开屏广告关闭完成回调
 - (void)mediationSplashDidClosed:(UbiXMediationSplash *)splash skip:(BOOL)isSkip;
 

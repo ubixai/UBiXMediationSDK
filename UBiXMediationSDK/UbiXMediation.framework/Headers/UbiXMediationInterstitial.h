@@ -50,9 +50,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 加载广告 */
 - (void)loadAd;
 
-/** 展示广告 即将被废弃，建议使用-(void)showAdFromRootViewController:(UIViewController *)rootViewController*/
-- (void)showAd;
-
 /** 展示广告并设置图层 */
 - (void)showAdFromRootViewController:(UIViewController *)rootViewController;
 
