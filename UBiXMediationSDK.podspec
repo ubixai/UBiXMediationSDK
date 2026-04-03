@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UBiXMediationSDK'
-  s.version          = '2.11.1.1002'
+  s.version          = '2.12.2.11'
   s.summary          = 'UBiX聚合广告变现SDK'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   s.weak_frameworks = 'AppTrackingTransparency', 'DeviceCheck'
   s.libraries = 'c++', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
 
-  s.dependency 'UBiXDaq','~>2.5.0'
+  s.dependency 'UBiXDaq'
   
 
 end
