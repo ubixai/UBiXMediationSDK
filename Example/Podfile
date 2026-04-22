@@ -8,7 +8,7 @@ platform :ios, '11.0'
 target 'UBiXMediationSDK_Example' do
   # 即刻聚合
   pod 'UBiXMediationSDK', :path => '../'
-#   pod 'UBiXMediationSDK', '2.12.2.11.1001'
+#   pod 'UBiXMediationSDK', '2.12.2.1102'
 
    # gromore 融合
    pod 'UBiXMGromoreAdapter', '7.5.0.4.0'
@@ -31,13 +31,16 @@ target 'UBiXMediationSDK_Example' do
   pod 'UBiXMQMAdapter', '1.5.1.0'
   
   # Fancy
-  pod 'UBiXMFancyAdapter', '2.3.6.0'
+  pod 'UBiXMFancyAdapter', '2.3.9.0'
   
   # WangMai
   pod 'UBiXMWangMaiAdapter', '7.7.4.30.0'
   
   # Youshi
   pod 'UBiXMYoushiAdapter', '3.1.0.9.0'
+  
+  # JuTui
+  pod 'UBiXMJTAdapter', '4.2.0.1.0'
 
   target 'UBiXMediationSDK_Tests' do
     inherit! :search_paths
