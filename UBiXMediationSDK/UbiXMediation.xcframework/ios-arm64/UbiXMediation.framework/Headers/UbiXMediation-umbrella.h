@@ -53,15 +53,6 @@
 #import "MediationAppApi.pbobjc.h"
 #import "MediationCofingApiV200.pbobjc.h"
 #import "MediationInitApi.pbobjc.h"
-#import "UBiXMAdProfInterstitialAdapter.h"
-#import "UBiXMAdProfNativeAdapter.h"
-#import "UBiXMAdProfNativeAdHelper.h"
-#import "UBiXMAdProfRewardVideoAdapter.h"
-#import "UBiXMAdProfSplashAdapter.h"
-#import "UBiXMAdProfAdapter.h"
-#import "UBiXMAdProfAdBaseAdapter.h"
-#import "UBiXMAdProfAdTools.h"
-#import "UBiXMAdProfConfigAdapter.h"
 
 FOUNDATION_EXPORT double UbiXMediationVersionNumber;
 FOUNDATION_EXPORT const unsigned char UbiXMediationVersionString[];

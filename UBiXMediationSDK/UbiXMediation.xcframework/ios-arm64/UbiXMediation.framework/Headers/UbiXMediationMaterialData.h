@@ -9,6 +9,15 @@
 #import "UbiXMediationNativeAd.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@interface UbiXMediationMaterialImageObj : NSObject
+/// 素材地址
+@property (nonatomic, copy) NSString *imageUrl;
+/// 宽
+@property (nonatomic, assign) float width;
+/// 高
+@property (nonatomic, assign) float height;
+
+@end
 
 @interface UbiXMediationMaterialData : NSObject
 
@@ -29,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 素材地址
 @property (nonatomic, strong) NSArray <NSString *> *imageUrls;
+/// 素材对象
+@property (nonatomic, strong) NSArray <UbiXMediationMaterialImageObj *> *imageObjs;
 
 @property (nonatomic, assign) BOOL rendering;
 
@@ -41,6 +52,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger videoDuration;
 /// 视频地址
 @property (nonatomic, copy) NSString *videoUrl;
+
+/// 视频封面
+@property (nonatomic, strong) UbiXMediationMaterialImageObj *videoCoverImageObj;
 
 /// 广告附属字段
 @property (nonatomic, assign) NSInteger adSourcetype;
