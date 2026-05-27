@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UbiXMediation/UbiXMediationEnum.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -38,6 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 信息流广告关闭回调
 - (void)mediationFeedAdViewDidClosed:(UbiXMedationFeedAdModel *)feedAdModel;
 
+// 信息流广告打开落地页回调 仅支持:天璇UBiX 自渲染
+-(void)mediationFeedAdDidPresentDetail:(UbiXMedationFeedAdModel*)adModel landingType:(UbiXMAdLandingType)landingType;
+
 // 信息流广告开始播放回调
 - (void)mediationFeedAdViewDidStartPlay:(UbiXMedationFeedAdModel *)feedAdModel;
 
@@ -47,8 +51,11 @@ NS_ASSUME_NONNULL_BEGIN
 // 信息流广告播放出错
 - (void)mediationFeedAdView:(UbiXMedationFeedAdModel *)feedAdModel didPlayError:(NSError *)error;
 
-// 信息流广告消失
+// 信息流广告消失, 仅支持: 天璇 UBiX 信息流模版
 - (void)mediationFeedAdViewDidDisMiss:(UbiXMedationFeedAdModel *)feedAdModel;
+
+// 信息流广告关闭落地页回调 仅支持:天璇UBiX 自渲染
+-(void)mediationFeedAdDidDismissDetail:(UbiXMedationFeedAdModel*)adModel landingType:(UbiXMAdLandingType)landingType;
 
 @end
 

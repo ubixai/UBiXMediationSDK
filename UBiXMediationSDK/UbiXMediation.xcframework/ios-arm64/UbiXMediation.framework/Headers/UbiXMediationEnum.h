@@ -37,4 +37,10 @@ typedef NS_ENUM(NSInteger, UbiXMVideoPlayerStatus) {
     UbiXMVideoPlayerStatusError = -2,  // 播放错误
 };
 
+/// 落地页类型
+typedef NS_ENUM(NSInteger, UbiXMAdLandingType) {
+    UbiXMAdLandingTypeNormal          = 0,   /// open webpage in-app
+    UbiXMAdLandingTypeStoreProduct    = 1,   /// open download page in-app
+};
+
 #endif /* UbiXMediationEnum_h */
