@@ -22,11 +22,12 @@
 			<key>BinaryPath</key>
 			<string>UbiXMediation.framework/UbiXMediation</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-x86_64-simulator</string>
+			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>UbiXMediation.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
+				<string>arm64</string>
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
@@ -37,6 +38,8 @@
 	</array>
 	<key>CFBundlePackageType</key>
 	<string>XFWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.13.1.1102</string>
 	<key>XCFrameworkFormatVersion</key>
 	<string>1.0</string>
 </dict>
