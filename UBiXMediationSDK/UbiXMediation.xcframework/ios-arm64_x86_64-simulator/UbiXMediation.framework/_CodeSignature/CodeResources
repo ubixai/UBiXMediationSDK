@@ -16,42 +16,6 @@
 		<data>
 		gRzDYxiA5ZXOly2ul1a1ESHIVn8=
 		</data>
-		<key>Headers/UBiXMAdProfAdBaseAdapter.h</key>
-		<data>
-		uRAdCLK5yXkasMfnNZeAlz7GyDw=
-		</data>
-		<key>Headers/UBiXMAdProfAdTools.h</key>
-		<data>
-		upHauBJTyMWTlbB8Hwh4WkpEPj8=
-		</data>
-		<key>Headers/UBiXMAdProfAdapter.h</key>
-		<data>
-		Xvaooq3bJFutFVH7V0xMCcPzrHg=
-		</data>
-		<key>Headers/UBiXMAdProfConfigAdapter.h</key>
-		<data>
-		A5Xat0whXeoLNj5NHijN5tKpeOs=
-		</data>
-		<key>Headers/UBiXMAdProfInterstitialAdapter.h</key>
-		<data>
-		xtFdmVG3Nen7Z0m0k/F/lOcSois=
-		</data>
-		<key>Headers/UBiXMAdProfNativeAdHelper.h</key>
-		<data>
-		M/zYU8npDtvYuIO5YoKZ1lOO7W4=
-		</data>
-		<key>Headers/UBiXMAdProfNativeAdapter.h</key>
-		<data>
-		kQgOMonoJtPVtOCwn5mGbdKiJUc=
-		</data>
-		<key>Headers/UBiXMAdProfRewardVideoAdapter.h</key>
-		<data>
-		pnPIphnsyVOIuERec5+gZguAmH4=
-		</data>
-		<key>Headers/UBiXMAdProfSplashAdapter.h</key>
-		<data>
-		z/Cm77qeP4VTbhCEbZ5aiAAOmt0=
-		</data>
 		<key>Headers/UBiXMFeedbackIconView.h</key>
 		<data>
 		wowh9KUEib8BTAqyQJxePcIlE6I=
@@ -146,7 +110,7 @@
 		</data>
 		<key>Headers/UbiXMediation-umbrella.h</key>
 		<data>
-		BKHOUZiUouBtnLEYLFuVmRuffOU=
+		X0pXn129SgkdVesuI+T0nm/E7VM=
 		</data>
 		<key>Headers/UbiXMediation.h</key>
 		<data>
@@ -218,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1b1ohcIh1bMXl+eHniAIE7rjjCM=
+		KKUAq2mMiNAEoS7Jv5GvQu8F7kw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -246,69 +210,6 @@
 			<key>hash2</key>
 			<data>
 			zAlsP5x9wOESsgc9gocQMMjeeHrUPYzr7L5WsEUvGPw=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfAdBaseAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KuSkBpZXLfDbnyigj485H8qsvUD9uUZXkqhfRxgo2Io=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfAdTools.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VWkfD7bzEKg7UnxaUoEzWjorul2oih4TiHQ4doQ/Ykw=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sX1AihaSVmKAgXA9PuLkcVCj2pk/+hthc98D2vaUJ+Q=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfConfigAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6KC/5BJwOtqgV3ap21ZVVIInfvyb//FI+LKfKmge6U8=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfInterstitialAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0AzstI7mUUJ2NIHvF2CzWpoJ80BHwnHDFDSPP6zuJA8=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfNativeAdHelper.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cso80KmuzthhxoV3VxmX0U9LbpXqss7RacqG7S/vlhE=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfNativeAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gLW/cUCzWHlXQ7lR5c+pw59Ub5jjVLjWxL448RypVbQ=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfRewardVideoAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ymEZIPlZ8ipd58ls1YKxh1EUVZyAdyvKTE3qiD+DgT0=
-			</data>
-		</dict>
-		<key>Headers/UBiXMAdProfSplashAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cW3TugGxcbBnDO4FJiz4B/V11jdokXsWBaMEi07/Pk4=
 			</data>
 		</dict>
 		<key>Headers/UBiXMFeedbackIconView.h</key>
@@ -476,7 +377,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wh5YWYoaRWp38A6J5h0n1KM2BBdVlIEcIL84tshqaUQ=
+			mxG9Y5H1MN8m36bHpU767lwGHEZ3hjULFCBj8CZjSHI=
 			</data>
 		</dict>
 		<key>Headers/UbiXMediation.h</key>
