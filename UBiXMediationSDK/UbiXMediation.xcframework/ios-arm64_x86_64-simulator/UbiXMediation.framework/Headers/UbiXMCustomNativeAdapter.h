@@ -76,7 +76,7 @@
 @property (nonatomic, weak, nullable) id<UbiXMCustomNativeAdapterBridge> bridge;
 
 /// 上报dislike的原因，仅限非模板广告自定义关闭按钮时使用
-/// @param ad GroMore包装的非模板广告数据
+/// @param ad 聚合层包装的自渲染广告数据
 /// @param reasons dislike的原因。数据基于ADN提供的原因修改
 - (void)reportDislikeAd:(UbiXMediationNativeAd *)ad withReasons:(NSArray<UbiXMDislikeReason *> *)reasons;
 

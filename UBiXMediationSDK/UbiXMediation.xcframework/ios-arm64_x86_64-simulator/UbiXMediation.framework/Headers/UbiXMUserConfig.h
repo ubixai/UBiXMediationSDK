@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, UbiXMAdSDKThemeStatus) {
 /// 设置扩展设备信息，如不了解该功能，请勿使用。 如@"[{\"device_id\":\"62271333038\"}]"
 @property (nonatomic, copy) NSDictionary *extraDeviceMap;
 
-/// 自定义IDFA，格式需与IDFA格式相同，xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx，官方adapter中CSJ/KS/Klevin支持
+/// 自定义IDFA，格式需与IDFA格式相同，xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx，当前定制版本由 UBiX/KS/JT Adapter 按各自能力处理
 @property (nonatomic, copy, nullable) NSString *customIDFA;
 
 @end

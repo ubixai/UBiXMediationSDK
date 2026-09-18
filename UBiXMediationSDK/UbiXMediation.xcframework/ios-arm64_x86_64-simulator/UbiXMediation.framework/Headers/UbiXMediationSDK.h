@@ -97,7 +97,7 @@ typedef NS_ENUM (int, UbixMUserInfoSubscribe) {
 @interface UbiXMediationSDK : NSObject
 
 /**
- * 可选, 是否限制个性化推荐:  NO-不限制、YES-限制，默认为NO。官方维护版本中只适用于CSJ，Ks、百度、GDT 、UbiX
+ * 可选, 是否限制个性化推荐:  NO-不限制、YES-限制，默认为NO。当前定制版本由 UBiX、KS、JT Adapter 按各自能力处理
  */
 @property (class, nonatomic, assign) BOOL limitPersonalAds;
 

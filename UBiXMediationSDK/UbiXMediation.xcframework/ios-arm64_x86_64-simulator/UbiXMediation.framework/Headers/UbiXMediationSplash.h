@@ -39,9 +39,6 @@ typedef NS_ENUM(NSUInteger, UbiXMSkipButtonShowType) {
 // 扩展参数
 @property (nonatomic, strong)NSDictionary *extraParams;
 
-// load前需要设置好所有参数
-- (void)loadAd;
-
 - (void)showAd:(UIWindow *)window;
 /// 销毁广告
 - (void)destroyAd;
